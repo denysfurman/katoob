@@ -78,4 +78,11 @@
 	strong, b{
 		font-weight: 700;
 	}
+	a{
+		color: $color_brand;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
 }

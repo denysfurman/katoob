@@ -1,6 +1,10 @@
 .courses_global{
 	.course-info{
 		font-size: 14px;
+		text-align: left;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0 34px;
 		&__row{
 			display: flex;
 			flex: 0 0 100%;
@@ -14,5 +18,29 @@
 				max-width: 60%;
 			}
 		}
+	}
+}
+
+.global{
+	&__content{
+		.courses{
+			background: none;
+			&__body{
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+			&__label{
+				&::after{
+					display: none;
+				}
+			}
+		}
+	}
+	.teacher-block__photo{
+		padding: 0 5px;
+	}
+	.courses__wrap{
+		height: 210px;
 	}
 }

@@ -70,6 +70,17 @@ block head
 								type="text"
 							)
 						.form__item.form-group
+							label.form__label Enter a location
+							input(
+								type="text" 
+								class="form__text form__text_mod" 
+								name="address" 
+								id="autocomplete" 
+								placeholder=""
+								value="" 
+								autocomplete="off"
+							)
+						.form__item.form-group
 							label.form__label Nationality
 							select(name="nationality")
 								option(value="Ukrainian") Arabian

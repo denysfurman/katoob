@@ -1,0 +1,33 @@
+section.global-news.global__block
+	h3.global__title News (res.12)
+	.global-news__content.row
+		- var count = 6;
+		- for(var i = 1; i <= count; i++){
+			.global-news__col.col-xl-2.col-sm-4
+				.global-news__item
+					.global-news__header
+						.global-news__image
+							img.global-news__img(
+								src="../images/courses_3.jpg"
+								alt=""
+							)
+						.global-news__info
+							.articles-header__view 3105 
+							.articles-header__comments 350
+							.articles-header__shares 350
+					.teacher-block
+						.teacher-block__wrap
+							.teacher-block__photo
+								img(
+									src='../images/teacher_1.png'
+									alt=""
+								)
+					.title-wrap
+						.title-wrap__label Сourse leads
+						h4.title-wrap__text Jenny Doe
+					.global-news__title Lorem Ipsum is simply dummy text of the printing 
+					p.global-news__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using 
+					a.global-news__link(href="#") Read more
+
+		- }
+	.global__btn Show more

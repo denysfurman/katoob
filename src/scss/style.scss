@@ -44,8 +44,7 @@
 
 //-----------------------------------ARTICLES----------------------------//
 @import 'pages/articles/_articles';
-//-----------------------------------ACCOUNT----------------------------//
-@import 'pages/account/_account';
+
 //-----------------------------------ARTICLE----------------------------//
 @import 'pages/article/_article';
 
@@ -70,6 +69,10 @@
 //-----------------------------------SERTIFICATES----------------------------//
 @import 'pages/_certificates';
 
+//-----------------------------------ACCOUNT----------------------------//
+@import 'pages/account/_account';
+//-----------------------------------ADDKurs----------------------------//
+@import 'pages/addkurs/_addkurs';
 //-----------------------------------DOWNLOAD----------------------------//
 @import 'pages/download/_download';
 @import 'pages/download/_download-nav';
@@ -92,3 +95,11 @@
 @import 'pages/global/_global-header';
 @import 'pages/global/_global-library';
 @import 'pages/global/_global-course';
+@import 'pages/global/_global-news';
+@import 'pages/global/_global-base';
+
+//-----------------------------------FORUMS----------------------------//
+@import 'pages/_forums';
+
+//-----------------------------------ACADEMIC----------------------------//
+@import 'pages/_academic';

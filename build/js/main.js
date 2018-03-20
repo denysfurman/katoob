@@ -194,4 +194,52 @@ $(document).ready(function(){
 		$(this).parents('.global__block').find('.row').addClass('active');
 	});
 
+	//drop table
+	$('.drop-btn').click(function(){
+		$(this).parents('tr').next().toggleClass('active');
+		$(this).toggleClass('active');
+	});
+
+	// autocomplete
+	if ($('#autocomplete').length !== 0){
+		var autocomplete = document.getElementById('autocomplete');
+		setTimeout(function(){
+			function initAutocomplete() {
+			    // Create the autocomplete object, restricting the search to geographical
+			    // location types.
+			    autocomplete = new google.maps.places.Autocomplete(
+			        (autocomplete),
+			        {types: ['geocode']});
+
+			    // When the user selects an address from the dropdown, populate the address
+			    // fields in the form.
+			    autocomplete.addListener('place_changed', fillInAddress);
+			    var place = autocomplete.getPlace();
+			}
+			initAutocomplete();
+		}, 500);
+		var componentForm = {
+			street_number: 'short_name',
+			route: 'long_name',
+			locality: 'long_name',
+			administrative_area_level_1: 'short_name',
+			country: 'long_name',
+			postal_code: 'short_name'
+		};
+		function fillInAddress() {
+		  // Get the place details from the autocomplete object.
+		  var place = autocomplete.getPlace();
+		  // Get each component of the address from the place details
+		  // and fill the corresponding field on the form.
+		  // for (var i = 0; i < place.address_components.length; i++) {
+		  //   var addressType = place.address_components[i].types[0];
+		  //   if (addressType == "country") {
+		  //   	console.log(document.getElementById("countryCode"))
+		  //     document.getElementById("countryCode").value = place.address_components[i].short_name;
+		  //   }
+		  // }
+		}
+	}
+
+
 });

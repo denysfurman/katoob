@@ -252,3 +252,20 @@ img{
 	text-transform: uppercase;
 	padding-top: 15px;
 }
+
+.page-404{
+	min-height: 600px;
+	&__title{
+		text-align: center;
+	}
+	ul{
+		max-width: 50%;
+		font-size: 18px;
+		li{
+			background: none !important;
+			.windows &{
+				padding-top: 9px;
+			}
+		}
+	}
+}

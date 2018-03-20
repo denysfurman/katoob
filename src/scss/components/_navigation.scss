@@ -122,3 +122,11 @@
         padding: 17px 20px 12px;
     }
 }
+
+.router-link-exact-active{
+    color: $color_brand;
+    font-weight: 700;
+    &::after{
+        width: 100%;
+    }
+}

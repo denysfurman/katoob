@@ -1,0 +1,157 @@
+extend includes/base/head
+block head
+	main.wrapper.wrapper_not-front
+		.wrapper__content.wrapper__content_backing
+			include includes/base/header.pug
+			.wrapper__middle
+				include includes/base/navigation.pug
+				.container-fluid
+					.breadcrumbs
+						a.breadcrumbs__link.breadcrumbs__link_home(href="home.html") Home
+						span.breadcrumbs__sep /
+						span.breadcrumbs__this Academic records
+					.forums__content
+						.forums-nav
+							a.forums-nav__link.forums-nav__link_coll(href="#") 
+								span Colective
+							a.forums-nav__link.forums-nav__link_active(href="#") 
+								span Individual
+						.academic
+							.academic__print
+								a.academic__link(href="#") Print
+							.academic__content
+								.academic__row
+									.academic__col
+										.academic__label Student full name
+										.academic__value.academic__value_icon Сourse names
+									.academic__col
+										.academic__label Registration date
+										.academic__value 12 nov 2017
+								.academic__row
+									.academic__col
+										.academic__label Nick name
+										.academic__value.academic__value_icon Ahmed Ali
+									.academic__col
+										.academic__label Academic record
+										.academic__value.academic__value_icon 36008442
+								.academic__row
+									.academic__col
+										.academic__label Current plan
+										.academic__value Level 1
+									.academic__col
+										.academic__label Academic points
+										.academic__value 149
+								.academic__row
+									.academic__col
+										.academic__label Current course
+										.academic__value Course 5
+									.academic__col
+										.academic__label General Average
+										.academic__value 91.5 %
+								.academic__row
+									.academic__col
+										.academic__label Current passed
+										.academic__value 4
+									.academic__col
+										.academic__label Last academic activity
+										.academic__value 1 feb 2018
+						.forums__wrap
+							table.base-table.base-table_academic.base-table_individual
+								thead
+									tr
+										th ID
+										th Course name
+										th.base-table__asc Sections
+										th Lessons
+										th Points
+										th.base-table__asc Register date
+										th Status
+										th.base-table__asc Pass date
+										th Rating
+										th.base-table__drop Dropdown
+								tbody
+									- var count = 25;
+									- for (var i = 1; i <= count; i++){
+										tr
+											td 1
+											td Course 1
+											td 1
+											td 25
+											td 28 / 28
+											td 12 nov 2017
+											td Level 1
+											td 12 nov 2017
+											td Exellent
+											td.drop-btn Dropdown
+										tr.academic-dropdown
+											td(colspan="10")
+												table
+													tr.tr-bold
+														td.active
+														td.active Section #
+														td.active Duty
+														td.active Exam
+														td.active Total
+														td
+														td
+														td
+														td
+														td
+													tr
+														td.active
+														td Section 1
+														td 18 / 20
+														td 78 / 80
+														td 96 / 100
+														td
+														td
+														td
+														td
+														td
+													tr
+														td.active
+														td Section 1
+														td 18 / 20
+														td 78 / 80
+														td 96 / 100
+														td
+														td
+														td
+														td
+														td
+													tr
+														td.active
+														td Section 1
+														td 18 / 20
+														td 78 / 80
+														td 96 / 100
+														td
+														td
+														td
+														td
+														td
+													tr.tr-bold
+														td
+														td Average
+														td 19
+														td 78.33
+														td 97.33
+														td
+														td
+														td
+														td
+														td
+													tr.tr-bold
+														td.active 5
+														td.active Rating
+														td Exellent
+														td
+														td
+														td
+														td
+														td
+														td
+														td
+									- }
+						include includes/pager.pug
+		include includes/base/footer.pug

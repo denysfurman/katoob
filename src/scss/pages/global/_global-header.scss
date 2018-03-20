@@ -5,10 +5,15 @@
 	padding: 0 15px;
 	padding-top: 110px;
 	margin: 0 0 25px;
+	@include media(phone){
+		height: auto;
+		padding: 25px 15px;
+		overflow: hidden;
+	}
 	&__title{
 		font-size: 30px;
 		font-weight: 300;
-		margin: 0 0 22px;
+		margin: 0 0 18px;
 		text-transform: uppercase;
 	}
 	&__search{
@@ -36,10 +41,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		padding-left: 100px;
+		@include media(phone){
+			padding-left: 20px;
+		}
 	}
 	&__col{
 		flex: 0 0 265px;
 		max-width: 265px;
 		text-align: left;
+		margin-bottom: 13px;
 	}
 }

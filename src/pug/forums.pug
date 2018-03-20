@@ -1,0 +1,55 @@
+extend includes/base/head
+block head
+	main.wrapper.wrapper_not-front
+		.wrapper__content.wrapper__content_backing
+			include includes/base/header.pug
+			.wrapper__middle
+				include includes/base/navigation.pug
+				.container-fluid
+					.breadcrumbs
+						a.breadcrumbs__link.breadcrumbs__link_home(href="home.html") Home
+						span.breadcrumbs__sep /
+						span.breadcrumbs__this Forums
+					.forums
+						form.articles-filter
+							.articles-filter__wrap
+								.articles-filter__title Create a new topic
+								.articles-filter__label Sort
+								.articles-filter__item
+									- var x = 5;
+									select
+										- for (var i=1; i<=x; i++) {
+											option(value="Last topic " + i)='Last topic ' + i
+										- }
+						.forums__content
+							.forums-nav
+								a.forums-nav__link.forums-nav__link_active(href="#") 
+									span General Forum
+								a.forums-nav__link(href="#") 
+									span Curses forum
+								a.forums-nav__link(href="#") 
+									span Help Forum
+							.forums__wrap
+								table.base-table.base-table_forums
+									thead
+										tr
+											th.base-table__id ID
+											th.base-table__name Topics
+											th.base-table__teacher Author
+											th.base-table__date Last post
+											th.base-table__class Posts
+											th.base-table__section Views
+									tbody
+										- var count = 25;
+										- for (var i = 1; i <= count; i++){
+											tr
+												td.base-table__id 3
+												td.base-table__name 
+													a(href="#") Question First topic
+												td.base-table__teacher First topic
+												td.base-table__date Lorem Ipsum
+												td.base-table__class 18
+												td.base-table__section 10 000 000
+										- }
+							include includes/pager.pug
+		include includes/base/footer.pug

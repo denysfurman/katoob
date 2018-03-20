@@ -1,0 +1,51 @@
+extend includes/base/head
+block head
+	main.wrapper.wrapper_not-front
+		.wrapper__content.wrapper__content_backing
+			include includes/base/header.pug
+			.wrapper__middle
+				include includes/base/navigation.pug
+				.container-fluid
+					.breadcrumbs
+						a.breadcrumbs__link.breadcrumbs__link_home(href="home.html") Home
+						span.breadcrumbs__sep /
+						span.breadcrumbs__this Academic records
+					.forums__content
+						.forums-nav
+							a.forums-nav__link.forums-nav__link_coll.forums-nav__link_active(href="#") 
+								span Colective
+							a.forums-nav__link(href="#") 
+								span Individual
+						.forums__wrap
+							table.base-table.base-table_academic
+								thead
+									tr
+										th ID
+										th Student full name
+										th Nick name
+										th Academic record
+										th Registration Date
+										th Academic points
+										th Courses passed
+										th General Average
+										th Current plan
+										th Current course
+										th Last academic activity
+								tbody
+									- var count = 25;
+									- for (var i = 1; i <= count; i++){
+										tr
+											td 8564789
+											td Ahmed ali Almutairy
+											td Ahmed ali
+											td 36008742
+											td 12 nov 2017
+											td 125
+											td 5
+											td 91.5%
+											td Level  1
+											td Course 5
+											td 1 feb 20018
+									- }
+						include includes/pager.pug
+		include includes/base/footer.pug

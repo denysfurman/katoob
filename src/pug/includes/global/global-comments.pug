@@ -1,0 +1,21 @@
+section.global-base.global__block
+	h3.global__title Comments (res.8)
+	.global-base__content.row
+		- var count = 6;
+		- for(var i = 1; i <= count; i++){
+			.global-base__col.col-xl-2.col-sm-4
+				.global-base__item
+					.global-base__photo
+						img.global-base__img(
+							src="../images/teacher_3.png"
+							alt=""
+						)
+					.global-base__body
+						.global-base__name Jenny Doe
+						.global-base__date 10 hours ago
+					p.global-base__text 
+						| It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+						| less normal distribution of letters, as opposed to using Content
+					a.global-base__more(href="#") Read more
+		- }
+	.global__btn Show more

@@ -1,0 +1,21 @@
+extend includes/base/head
+block head
+	main.wrapper.wrapper_not-front
+		.wrapper__content.wrapper__content_backing
+			include includes/base/header.pug
+			.wrapper__middle
+				include includes/base/navigation.pug
+				.container-fluid
+					.breadcrumbs
+						a.breadcrumbs__link.breadcrumbs__link_home(href="home.html") Home
+						span.breadcrumbs__sep /
+						span.breadcrumbs__this 404
+					.page-404
+						h2.page-404__title Oops..., We cannot find the page you are looking for, sorry... ( Error 404 )
+						.page-404__text.base__text
+							ul
+								li If you typed in a URL... check the spelling and try reloading the page.
+								li Start over again with the 
+									a(href="#") Home page
+
+		include includes/base/footer.pug

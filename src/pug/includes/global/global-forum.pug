@@ -1,0 +1,28 @@
+section.global-base.global__block
+	h3.global__title Forum (res.20)
+	.global-base__content.row
+		- var count = 6;
+		- for(var i = 1; i <= count; i++){
+			.global-base__col.col-xl-2.col-sm-4
+				.global-base__item
+					.global-base__photo
+						img.global-base__img(
+							src="../images/teacher_2.png"
+							alt=""
+						)
+					.global-base__body
+						.global-base__post Supervisor
+						.global-base__name Jenny Doe
+					.global-base__topic First topic
+					.global-base__row.row
+						.global-base__value.col-sm-6 Last post
+						.global-base__value.col-sm-6 Lorem Ipsum
+					.global-base__row.row
+						.global-base__value.col-sm-6 Last post
+						.global-base__value.col-sm-6 Lorem Ipsum
+					.global-base__row.row
+						.global-base__value.col-sm-6 Last post
+						.global-base__value.col-sm-6 8000
+					a.global-base__link(href="#") Read more
+		- }
+	.global__btn Show more

@@ -101,7 +101,7 @@
                 </div>
               </form>
             </div>
-            <div class="global__content container-fluid">
+            <div class="global__content container-fluid"> 
               <h2 class="global__main-title">Searching results</h2>
               <section class="global-library global__block">
                 <h3 class="global__title">Q&library (res.13)</h3>
@@ -343,7 +343,193 @@
                           <div class="teacher-block__photo"><img src="../images/teacher_2.png" alt=""></div>
                           <div class="teacher-block__more">
                             <div class="teacher-block__btn" @click="showTeachers">More</div>
-                            <div class="teacher-dropdown" :class="{ 'teacher-dropdown_active': teacherActive} ">
+                            <div class="teacher-dropdown" :class="{ 'teacher-dropdown_active': teacherActive}">
+                              <div class="teacher-dropdown__close" @click="hideTeachers"></div>
+                              <div class="teacher-dropdown__content">
+                                <div class="teacher-dropdown__row">
+                                  <div class="teacher-dropdown__image"><img class="teacher-dropdown__img" src="../images/teacher_drop.png" alt=""></div>
+                                  <div class="teacher-dropdown__name">Samuel-Hopkins</div>
+                                </div>
+                                <div class="teacher-dropdown__row">
+                                  <div class="teacher-dropdown__image"><img class="teacher-dropdown__img" src="../images/teacher_drop.png" alt=""></div>
+                                  <div class="teacher-dropdown__name">Samuel-Hopkins</div>
+                                </div>
+                                <div class="teacher-dropdown__row">
+                                  <div class="teacher-dropdown__image"><img class="teacher-dropdown__img" src="../images/teacher_drop.png" alt=""></div>
+                                  <div class="teacher-dropdown__name">Samuel-Hopkins</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="title-wrap">
+                        <div class="title-wrap__label">
+                           Teacher course <br>leads</div>
+                      </div>
+                      <div class="course-info">
+                        <div class="course-info__row">
+                          <div class="course-info__col">
+                            <div class="course-info__label">Lessons</div>
+                            <div class="course-info__value">15</div>
+                          </div>
+                          <div class="course-info__col">
+                            <div class="course-info__label">Registered</div>
+                            <div class="course-info__value">150</div>
+                          </div>
+                        </div>
+                        <div class="course-info__row">
+                          <div class="course-info__col">
+                            <div class="course-info__label">Currently studing</div>
+                            <div class="course-info__value">45</div>
+                          </div>
+                          <div class="course-info__col">
+                            <div class="course-info__label">Passed</div>
+                            <div class="course-info__value">15</div>
+                          </div>
+                        </div>
+                      </div><a class="courses__link" href="">Registration</a>
+                    </div>
+                  </div>
+                  <div class="courses__col col-md-6 col-xl-2">
+                    <div class="courses__item">
+                      <div class="courses__wrap"> 
+                        <div class="courses__image"><img class="courses__img" src="../images/courses_1.jpg" alt=""></div>
+                        <div class="courses__body">
+                          <h3 class="courses__label">Lorem ipsum dolor sit amet</h3>
+                        </div>
+                      </div>
+                      <div class="teacher-block">
+                        <div class="teacher-block__wrap">
+                          <div class="teacher-block__photo"><img src="../images/teacher_1.png" alt=""></div>
+                          <div class="teacher-block__photo"><img src="../images/teacher_2.png" alt=""></div>
+                          <div class="teacher-block__more">
+                            <div class="teacher-block__btn" @click="showTeachers">More</div>
+                            <div class="teacher-dropdown" :class="{ 'teacher-dropdown_active': teacherActive}">
+                              <div class="teacher-dropdown__close" @click="hideTeachers"></div>
+                              <div class="teacher-dropdown__content">
+                                <div class="teacher-dropdown__row">
+                                  <div class="teacher-dropdown__image"><img class="teacher-dropdown__img" src="../images/teacher_drop.png" alt=""></div>
+                                  <div class="teacher-dropdown__name">Samuel-Hopkins</div>
+                                </div>
+                                <div class="teacher-dropdown__row">
+                                  <div class="teacher-dropdown__image"><img class="teacher-dropdown__img" src="../images/teacher_drop.png" alt=""></div>
+                                  <div class="teacher-dropdown__name">Samuel-Hopkins</div>
+                                </div>
+                                <div class="teacher-dropdown__row">
+                                  <div class="teacher-dropdown__image"><img class="teacher-dropdown__img" src="../images/teacher_drop.png" alt=""></div>
+                                  <div class="teacher-dropdown__name">Samuel-Hopkins</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="title-wrap">
+                        <div class="title-wrap__label">
+                           Teacher course <br>leads</div>
+                      </div>
+                      <div class="course-info">
+                        <div class="course-info__row">
+                          <div class="course-info__col">
+                            <div class="course-info__label">Lessons</div>
+                            <div class="course-info__value">15</div>
+                          </div>
+                          <div class="course-info__col">
+                            <div class="course-info__label">Registered</div>
+                            <div class="course-info__value">150</div>
+                          </div>
+                        </div>
+                        <div class="course-info__row">
+                          <div class="course-info__col">
+                            <div class="course-info__label">Currently studing</div>
+                            <div class="course-info__value">45</div>
+                          </div>
+                          <div class="course-info__col">
+                            <div class="course-info__label">Passed</div>
+                            <div class="course-info__value">15</div>
+                          </div>
+                        </div>
+                      </div><a class="courses__link" href="">Registration</a>
+                    </div>
+                  </div>
+                  <div class="courses__col col-md-6 col-xl-2">
+                    <div class="courses__item">
+                      <div class="courses__wrap"> 
+                        <div class="courses__image"><img class="courses__img" src="../images/courses_1.jpg" alt=""></div>
+                        <div class="courses__body">
+                          <h3 class="courses__label">Lorem ipsum dolor sit amet</h3>
+                        </div>
+                      </div>
+                      <div class="teacher-block">
+                        <div class="teacher-block__wrap">
+                          <div class="teacher-block__photo"><img src="../images/teacher_1.png" alt=""></div>
+                          <div class="teacher-block__photo"><img src="../images/teacher_2.png" alt=""></div>
+                          <div class="teacher-block__more">
+                            <div class="teacher-block__btn" @click="showTeachers">More</div>
+                            <div class="teacher-dropdown" :class="{ 'teacher-dropdown_active': teacherActive}">
+                              <div class="teacher-dropdown__close" @click="hideTeachers"></div>
+                              <div class="teacher-dropdown__content">
+                                <div class="teacher-dropdown__row">
+                                  <div class="teacher-dropdown__image"><img class="teacher-dropdown__img" src="../images/teacher_drop.png" alt=""></div>
+                                  <div class="teacher-dropdown__name">Samuel-Hopkins</div>
+                                </div>
+                                <div class="teacher-dropdown__row">
+                                  <div class="teacher-dropdown__image"><img class="teacher-dropdown__img" src="../images/teacher_drop.png" alt=""></div>
+                                  <div class="teacher-dropdown__name">Samuel-Hopkins</div>
+                                </div>
+                                <div class="teacher-dropdown__row">
+                                  <div class="teacher-dropdown__image"><img class="teacher-dropdown__img" src="../images/teacher_drop.png" alt=""></div>
+                                  <div class="teacher-dropdown__name">Samuel-Hopkins</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="title-wrap">
+                        <div class="title-wrap__label">
+                           Teacher course <br>leads</div>
+                      </div>
+                      <div class="course-info">
+                        <div class="course-info__row">
+                          <div class="course-info__col">
+                            <div class="course-info__label">Lessons</div>
+                            <div class="course-info__value">15</div>
+                          </div>
+                          <div class="course-info__col">
+                            <div class="course-info__label">Registered</div>
+                            <div class="course-info__value">150</div>
+                          </div>
+                        </div>
+                        <div class="course-info__row">
+                          <div class="course-info__col">
+                            <div class="course-info__label">Currently studing</div>
+                            <div class="course-info__value">45</div>
+                          </div>
+                          <div class="course-info__col">
+                            <div class="course-info__label">Passed</div>
+                            <div class="course-info__value">15</div>
+                          </div>
+                        </div>
+                      </div><a class="courses__link" href="">Registration</a>
+                    </div>
+                  </div>
+                  <div class="courses__col col-md-6 col-xl-2">
+                    <div class="courses__item">
+                      <div class="courses__wrap"> 
+                        <div class="courses__image"><img class="courses__img" src="../images/courses_1.jpg" alt=""></div>
+                        <div class="courses__body">
+                          <h3 class="courses__label">Lorem ipsum dolor sit amet</h3>
+                        </div>
+                      </div>
+                      <div class="teacher-block">
+                        <div class="teacher-block__wrap">
+                          <div class="teacher-block__photo"><img src="../images/teacher_1.png" alt=""></div>
+                          <div class="teacher-block__photo"><img src="../images/teacher_2.png" alt=""></div>
+                          <div class="teacher-block__more">
+                            <div class="teacher-block__btn" @click="showTeachers">More</div>
+                            <div class="teacher-dropdown" :class="{ 'teacher-dropdown_active': teacherActive}">
                               <div class="teacher-dropdown__close" @click="hideTeachers"></div>
                               <div class="teacher-dropdown__content">
                                 <div class="teacher-dropdown__row">
@@ -392,6 +578,372 @@
                     </div>
                   </div>
                 </div>
+              </section>
+              <section class="global-news global__block">
+                <h3 class="global__title">News (res.12)</h3>
+                <div class="global-news__content row">
+                  <div class="global-news__col col-xl-2 col-sm-4">
+                    <div class="global-news__item">
+                      <div class="global-news__header">
+                        <div class="global-news__image"><img class="global-news__img" src="../images/courses_3.jpg" alt=""></div>
+                        <div class="global-news__info">
+                          <div class="articles-header__view">3105 </div>
+                          <div class="articles-header__comments">350</div>
+                          <div class="articles-header__shares">350</div>
+                        </div>
+                      </div>
+                      <div class="teacher-block">
+                        <div class="teacher-block__wrap">
+                          <div class="teacher-block__photo"><img src="../images/teacher_1.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="title-wrap">
+                        <div class="title-wrap__label">Сourse leads</div>
+                        <h4 class="title-wrap__text">Jenny Doe</h4>
+                      </div>
+                      <div class="global-news__title">Lorem Ipsum is simply dummy text of the printing </div>
+                      <p class="global-news__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using </p><a class="global-news__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-news__col col-xl-2 col-sm-4">
+                    <div class="global-news__item">
+                      <div class="global-news__header">
+                        <div class="global-news__image"><img class="global-news__img" src="../images/courses_3.jpg" alt=""></div>
+                        <div class="global-news__info">
+                          <div class="articles-header__view">3105 </div>
+                          <div class="articles-header__comments">350</div>
+                          <div class="articles-header__shares">350</div>
+                        </div>
+                      </div>
+                      <div class="teacher-block">
+                        <div class="teacher-block__wrap">
+                          <div class="teacher-block__photo"><img src="../images/teacher_1.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="title-wrap">
+                        <div class="title-wrap__label">Сourse leads</div>
+                        <h4 class="title-wrap__text">Jenny Doe</h4>
+                      </div>
+                      <div class="global-news__title">Lorem Ipsum is simply dummy text of the printing </div>
+                      <p class="global-news__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using </p><a class="global-news__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-news__col col-xl-2 col-sm-4">
+                    <div class="global-news__item">
+                      <div class="global-news__header">
+                        <div class="global-news__image"><img class="global-news__img" src="../images/courses_3.jpg" alt=""></div>
+                        <div class="global-news__info">
+                          <div class="articles-header__view">3105 </div>
+                          <div class="articles-header__comments">350</div>
+                          <div class="articles-header__shares">350</div>
+                        </div>
+                      </div>
+                      <div class="teacher-block">
+                        <div class="teacher-block__wrap">
+                          <div class="teacher-block__photo"><img src="../images/teacher_1.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="title-wrap">
+                        <div class="title-wrap__label">Сourse leads</div>
+                        <h4 class="title-wrap__text">Jenny Doe</h4>
+                      </div>
+                      <div class="global-news__title">Lorem Ipsum is simply dummy text of the printing </div>
+                      <p class="global-news__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using </p><a class="global-news__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-news__col col-xl-2 col-sm-4">
+                    <div class="global-news__item">
+                      <div class="global-news__header">
+                        <div class="global-news__image"><img class="global-news__img" src="../images/courses_3.jpg" alt=""></div>
+                        <div class="global-news__info">
+                          <div class="articles-header__view">3105 </div>
+                          <div class="articles-header__comments">350</div>
+                          <div class="articles-header__shares">350</div>
+                        </div>
+                      </div>
+                      <div class="teacher-block">
+                        <div class="teacher-block__wrap">
+                          <div class="teacher-block__photo"><img src="../images/teacher_1.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="title-wrap">
+                        <div class="title-wrap__label">Сourse leads</div>
+                        <h4 class="title-wrap__text">Jenny Doe</h4>
+                      </div>
+                      <div class="global-news__title">Lorem Ipsum is simply dummy text of the printing </div>
+                      <p class="global-news__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using </p><a class="global-news__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-news__col col-xl-2 col-sm-4">
+                    <div class="global-news__item">
+                      <div class="global-news__header">
+                        <div class="global-news__image"><img class="global-news__img" src="../images/courses_3.jpg" alt=""></div>
+                        <div class="global-news__info">
+                          <div class="articles-header__view">3105 </div>
+                          <div class="articles-header__comments">350</div>
+                          <div class="articles-header__shares">350</div>
+                        </div>
+                      </div>
+                      <div class="teacher-block">
+                        <div class="teacher-block__wrap">
+                          <div class="teacher-block__photo"><img src="../images/teacher_1.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="title-wrap">
+                        <div class="title-wrap__label">Сourse leads</div>
+                        <h4 class="title-wrap__text">Jenny Doe</h4>
+                      </div>
+                      <div class="global-news__title">Lorem Ipsum is simply dummy text of the printing </div>
+                      <p class="global-news__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using </p><a class="global-news__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-news__col col-xl-2 col-sm-4">
+                    <div class="global-news__item">
+                      <div class="global-news__header">
+                        <div class="global-news__image"><img class="global-news__img" src="../images/courses_3.jpg" alt=""></div>
+                        <div class="global-news__info">
+                          <div class="articles-header__view">3105 </div>
+                          <div class="articles-header__comments">350</div>
+                          <div class="articles-header__shares">350</div>
+                        </div>
+                      </div>
+                      <div class="teacher-block">
+                        <div class="teacher-block__wrap">
+                          <div class="teacher-block__photo"><img src="../images/teacher_1.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="title-wrap">
+                        <div class="title-wrap__label">Сourse leads</div>
+                        <h4 class="title-wrap__text">Jenny Doe</h4>
+                      </div>
+                      <div class="global-news__title">Lorem Ipsum is simply dummy text of the printing </div>
+                      <p class="global-news__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using </p><a class="global-news__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="global__btn">Show more</div>
+              </section>
+              <section class="global-base global__block">
+                <h3 class="global__title">Forum (res.20)</h3>
+                <div class="global-base__content row">
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_2.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__post">Supervisor</div>
+                        <div class="global-base__name">Jenny Doe</div>
+                      </div>
+                      <div class="global-base__topic">First topic</div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">8000</div>
+                      </div><a class="global-base__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_2.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__post">Supervisor</div>
+                        <div class="global-base__name">Jenny Doe</div>
+                      </div>
+                      <div class="global-base__topic">First topic</div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">8000</div>
+                      </div><a class="global-base__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_2.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__post">Supervisor</div>
+                        <div class="global-base__name">Jenny Doe</div>
+                      </div>
+                      <div class="global-base__topic">First topic</div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">8000</div>
+                      </div><a class="global-base__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_2.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__post">Supervisor</div>
+                        <div class="global-base__name">Jenny Doe</div>
+                      </div>
+                      <div class="global-base__topic">First topic</div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">8000</div>
+                      </div><a class="global-base__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_2.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__post">Supervisor</div>
+                        <div class="global-base__name">Jenny Doe</div>
+                      </div>
+                      <div class="global-base__topic">First topic</div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">8000</div>
+                      </div><a class="global-base__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_2.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__post">Supervisor</div>
+                        <div class="global-base__name">Jenny Doe</div>
+                      </div>
+                      <div class="global-base__topic">First topic</div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">Lorem Ipsum</div>
+                      </div>
+                      <div class="global-base__row row">
+                        <div class="global-base__value col-sm-6">Last post</div>
+                        <div class="global-base__value col-sm-6">8000</div>
+                      </div><a class="global-base__link" href="#">Read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="global__btn">Show more</div>
+              </section>
+              <section class="global-base global__block">
+                <h3 class="global__title">Comments (res.8)</h3>
+                <div class="global-base__content row">
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_3.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__name">Jenny Doe</div>
+                        <div class="global-base__date">10 hours ago</div>
+                      </div>
+                      <p class="global-base__text">
+                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+                        less normal distribution of letters, as opposed to using Content
+                      </p><a class="global-base__more" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_3.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__name">Jenny Doe</div>
+                        <div class="global-base__date">10 hours ago</div>
+                      </div>
+                      <p class="global-base__text">
+                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+                        less normal distribution of letters, as opposed to using Content
+                      </p><a class="global-base__more" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_3.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__name">Jenny Doe</div>
+                        <div class="global-base__date">10 hours ago</div>
+                      </div>
+                      <p class="global-base__text">
+                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+                        less normal distribution of letters, as opposed to using Content
+                      </p><a class="global-base__more" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_3.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__name">Jenny Doe</div>
+                        <div class="global-base__date">10 hours ago</div>
+                      </div>
+                      <p class="global-base__text">
+                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+                        less normal distribution of letters, as opposed to using Content
+                      </p><a class="global-base__more" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_3.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__name">Jenny Doe</div>
+                        <div class="global-base__date">10 hours ago</div>
+                      </div>
+                      <p class="global-base__text">
+                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+                        less normal distribution of letters, as opposed to using Content
+                      </p><a class="global-base__more" href="#">Read more</a>
+                    </div>
+                  </div>
+                  <div class="global-base__col col-xl-2 col-sm-4">
+                    <div class="global-base__item">
+                      <div class="global-base__photo"><img class="global-base__img" src="../images/teacher_3.png" alt=""></div>
+                      <div class="global-base__body">
+                        <div class="global-base__name">Jenny Doe</div>
+                        <div class="global-base__date">10 hours ago</div>
+                      </div>
+                      <p class="global-base__text">
+                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+                        less normal distribution of letters, as opposed to using Content
+                      </p><a class="global-base__more" href="#">Read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="global__btn">Show more</div>
               </section>
             </div>
           </div>
@@ -448,6 +1000,10 @@
             <li><a href="test_3.html">test 3</a></li>
             <li><a href="test_4.html">test 4</a></li>
             <li><a href="search.html">search</a></li>
+            <li><a href="academic_coll.html">academic collective</a></li>
+            <li><a href="academic_individual.html">academic individual</a></li>
+            <li><a href="forums.html">forums</a></li>
+            <li><a href="global_search.html">global search</a></li>
           </ul>
         </div>
       </footer>
@@ -458,6 +1014,7 @@
       <script src="../js/datepicker.js"></script>
       <script src="../js/current-device.min.js"></script>
       <script src="../js/jquery.livequery.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmogL0RunjXzhgLEqFX0YLvwlQ9fG_hyY&amp;libraries=places"></script>
       <script src="../js/plyr.js"></script>
       <script src="../js/jquery.jscrollpane.min.js"></script>
       <script src="../js/jquery.mousewheel.js"></script>
