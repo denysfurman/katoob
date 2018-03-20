@@ -48,6 +48,113 @@
           </nav>
           <div class="container-fluid">
             <div class="breadcrumbs"><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Articles</span></div>
+            <div class="page__title">My Account</div>
+            <div class="account">
+              <div class="account__header"><span>Personal information</span></div>
+              <div class="account__container">
+                <form class="account__form">
+                  <div class="account__form_left">
+                    <div class="form__title form__title_account">Your Information</div>
+                    <div class="form__item form-group form__item_image">
+                      <div class="form__images_plus">
+                        <div class="form__images-wrap">
+                          <label for="registrationImage"><span class="plus">+</span><span class="text">Upload a photo<i><img src="../images/trash.png"></i></span></label>
+                          <input class="form__image form__image_register form-control" id="registrationImage" type="file" name="registration[image]" onchange="readURL(this)">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__item form-group">
+                      <label class="form__label">Surname</label>
+                      <input class="form__text form__text_mod form-control" type="text">
+                    </div>
+                    <div class="form__item form-group">
+                      <label class="form__label">Name</label>
+                      <input class="form__text form__text_mod form-control" type="text">
+                    </div>
+                    <div class="form__item form__item_sex form-group">
+                      <label class="form__sex form__label">Sex</label>
+                      <div class="form_radio-btns">
+                        <div class="form__radios">
+                          <input class="form__radio" id="female" type="radio" name="sex" checked="">
+                          <label for="female">Female</label>
+                        </div>
+                        <div class="form__radios">
+                          <input class="form__radio" id="male" type="radio" name="sex">
+                          <label for="male">Male</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__item form-group">
+                      <label class="form__label">Nationality</label>
+                      <select name="nationality">
+                        <option value="Ukrainian">Arabian</option>
+                        <option value="Arabian">Ukrainian</option>
+                      </select>
+                    </div>
+                    <div class="form__item form__item_date form-group">
+                      <label class="form__label">Date of Birth</label>
+                      <input class="form__text form__text_mod form__text_date form-control" type="text">
+                    </div>
+                    <div class="form__item form-group">
+                      <label class="form__label">Country</label>
+                      <select name="nationality">
+                        <option value="Ukraine">Saudi Arabia</option>
+                        <option value="OAE">Ukraine</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="account__form_center">
+                    <div class="form__item form-group">
+                      <label class="form__label">Number of courses</label>
+                      <input class="form__text form__text_mod form__number form-control" type="number">
+                    </div>
+                    <div class="form__item form-group">
+                      <label class="form__label">Number of posts</label>
+                      <input class="form__text form__text_mod form__number form-control" type="number">
+                    </div>
+                    <div class="form__item form-group">
+                      <label class="form__label">Number of answered</label>
+                      <input class="form__text form__text_mod form__number form-control" type="number">
+                    </div>
+                    <div class="form__item form-group">
+                      <label class="form__label">Number of articles</label>
+                      <input class="form__text form__text_mod form__number form-control" type="number">
+                    </div>
+                  </div>
+                  <div class="account__form_right">
+                    <div class="form__title form__title_account"><b>Change password</b></div>
+                    <div class="form__item form-group">
+                      <label class="form__label">Old pass</label>
+                      <input class="form__text form__text_mod form-control" type="password">
+                    </div>
+                    <div class="form__item form-group">
+                      <label class="form__label">New pass</label>
+                      <input class="form__text form__text_mod form-control" type="password">
+                    </div>
+                    <div class="form__item form-group">
+                      <label class="form__label">Confirm password</label>
+                      <input class="form__text form__text_mod form-control" type="password">
+                    </div>
+                    <div class="form__checkboxes">
+                      <input class="form__checkbox" id="search" type="checkbox" name="search">
+                      <label for="search">Show password</label>
+                    </div>
+                    <div class="form__actions">
+                      <input class="form__submit" type="submit" value="Save">
+                    </div>
+                  </div>
+                  <div class="account__form_bottom">
+                    <div class="form__checkboxes">
+                      <input class="form__checkbox" id="police" type="checkbox" name="police">
+                      <label for="police"><a href="#">Policies on the processing of personal data</a><span>Policies on the processing of personal data</span></label>
+                    </div>
+                    <div class="form__actions">
+                      <input class="form__submit" type="submit" value="Save Changes">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
