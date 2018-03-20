@@ -1,0 +1,99 @@
+extend includes/base/head
+block head
+    main.wrapper.wrapper_not-front
+        .wrapper__content
+            include includes/base/header.pug
+            .wrapper__middle
+                include includes/base/navigation.pug
+                .container-fluid
+                    .breadcrumbs
+                        a.breadcrumbs__link.breadcrumbs__link_home(href="home.html") Home
+                        span.breadcrumbs__sep /
+                        span.breadcrumbs__this Articles
+                    .page__title My Account
+                    .account
+                        .account__header
+                            span Personal information
+                        .account__container
+                            form.account__form
+                                .account__form_left
+                                    .form__title.form__title_account Your Information
+                                    .form__item.form-group.form__item_image
+                                        .form__images_plus
+                                            .form__images-wrap
+                                                label(for='registrationImage')
+                                                    span.plus +
+                                                    span.text
+                                                        | Upload a photo
+                                                        i
+                                                            img(src='../images/trash.png')
+                                                input#registrationImage.form__image.form__image_register.form-control(type='file', name='registration[image]', onchange='readURL(this)')
+                                    .form__item.form-group
+                                        label.form__label Surname
+                                        input.form__text.form__text_mod.form-control(type='text')
+                                    .form__item.form-group
+                                        label.form__label Name
+                                        input.form__text.form__text_mod.form-control(type='text')
+                                    .form__item.form__item_sex.form-group
+                                        label.form__sex.form__label Sex
+                                        .form_radio-btns
+                                            .form__radios
+                                                input#female.form__radio(type='radio', name='sex', checked='')
+                                                label(for='female') Female
+                                            .form__radios
+                                                input#male.form__radio(type='radio', name='sex')
+                                                label(for='male') Male
+                                    .form__item.form-group
+                                        label.form__label Nationality
+                                        select(name='nationality')
+                                            option(value='Ukrainian') Arabian
+                                            option(value='Arabian') Ukrainian
+                                    .form__item.form__item_date.form-group
+                                        label.form__label Date of Birth
+                                        input.form__text.form__text_mod.form__text_date.form-control(type='text')
+                                    .form__item.form-group
+                                        label.form__label Country
+                                        select(name='nationality')
+                                            option(value='Ukraine') Saudi Arabia
+                                            option(value='OAE') Ukraine
+                                .account__form_center
+                                    .form__item.form-group
+                                        label.form__label Number of courses
+                                        input.form__text.form__text_mod.form__number.form-control(type='number')
+                                    .form__item.form-group
+                                        label.form__label Number of posts
+                                        input.form__text.form__text_mod.form__number.form-control(type='number')
+                                    .form__item.form-group
+                                        label.form__label Number of answered
+                                        input.form__text.form__text_mod.form__number.form-control(type='number')
+                                    .form__item.form-group
+                                        label.form__label Number of articles
+                                        input.form__text.form__text_mod.form__number.form-control(type='number')
+                                .account__form_right
+                                    .form__title.form__title_account
+                                        b Change password
+                                    .form__item.form-group
+                                        label.form__label Old pass
+                                        input.form__text.form__text_mod.form-control(type='password')
+                                    .form__item.form-group
+                                        label.form__label New pass
+                                        input.form__text.form__text_mod.form-control(type='password')
+                                    .form__item.form-group
+                                        label.form__label Confirm password
+                                        input.form__text.form__text_mod.form-control(type='password')
+                                    .form__checkboxes
+                                        input#search.form__checkbox(type='checkbox', name='search')
+                                        label(for='search') Show password
+                                    .form__actions
+                                        input.form__submit(type='submit', value='Save')
+                                .account__form_bottom
+                                    .form__checkboxes
+                                        input#police.form__checkbox(type='checkbox', name='police')
+                                        label(for='police')
+                                            a(href='#') Policies on the processing of personal data
+                                            span Policies on the processing of personal data
+                                    .form__actions
+                                        input.form__submit(type='submit', value='Save Changes')
+
+
+        include includes/base/footer.pug
