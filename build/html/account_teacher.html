@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/datepicker.css">
     <link rel="stylesheet" href="../css/plyr.css">
     <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/jquery.jscrollpane.css">
   </head>
   <body>
     <main class="wrapper wrapper_not-front">
@@ -50,7 +51,10 @@
             <div class="breadcrumbs"><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Articles</span></div>
             <div class="page__title">My Account</div>
             <div class="account__teacher">
-              <div class="account__header"><span>Personal information</span></div>
+              <div class="download-nav">
+                <nav class="download-nav__wrap"><a class="download-nav__link " href="#">Personal information</a><a class="download-nav__link download-nav__link_active" href="#">View students scores by tests</a>
+                </nav>
+              </div>
               <div class="account__teacher__content">
                 <div class="account__teacher__wrap">
                   <table class="base-table">
@@ -65,7 +69,7 @@
                         <th class="base-table__Status">Status</th>
                         <th class="base-table__date">Pass date</th>
                         <th class="base-table__rating base-table__asc">Rating</th>
-                        <th class="base-table__current"></th>
+                        <th class="base-table__current no_sort"><span class="icon-icon_33"></span></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -78,26 +82,206 @@
                         <td class="base-table__date"><a href="#">12 nov 2017</a></td>
                         <td class="base-table__Status"><a href="#">Level 1</a></td>
                         <td class="base-table__date"><a href="#">12 nov 2017</a></td>
-                        <td class="base-table__rating base-table__asc"><a href="#">Exellent</a>
+                        <td class="base-table__rating base-table__asc"><a class="open_hidden_open_block">Exellent</a>
                           <div class="hidden_open_block"><span class="close"><img src="../images/canc.png"></span>
                             <div class="hidden_open_block_top"><span>№</span>
                               <ul class="hidden_open_block_top_nav">
+                                <li class="left_nav"><a href="#"><img src="../images/sort_arrow.png"></a></li>
                                 <li><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
                                 <li><a href="#">4</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">1</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a class="active" href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">13</a></li>
+                                <li><a href="#">14</a></li>
+                                <li><a href="#">15</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">...</a></li>
+                                <li class="right_nav"><a href="#"><img src="../images/sort_arrow.png"></a></li>
                               </ul>
+                            </div>
+                            <div class="question_text"><span> Question</span>
+                              <div class="question_text_scroll">
+                                Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                Eam et sale appetere,
+                                timeam inimicus pro et, eum id integre feugait principes.
+                                Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                ne mea copiosae
+                                Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                
+                                
+                              </div>
+                            </div>
+                            <div class="answer_text"><span> Answer</span>
+                              <div class="answer_text_scroll">
+                                Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                Eam et sale appetere,timeam inimicus pro et, eum id integre feugait principes.
+                                Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                ne mea copiosae Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                              </div>
+                            </div>
+                            <div class="hidden_open_assessment">
+                              <form class="hidden_open_assessment_form"><span>Assessment of</span>
+                                <input class="assessment_input" type="text" value="11">
+                                <div class="hidden_open_assessment_form_button">
+                                  <input class="form__submit" type="submit" value="Confirm">
+                                </div>
+                              </form>
                             </div>
                           </div>
                         </td>
-                        <td class="base-table__current">=</td>
+                        <td class="base-table__current"><a href="#"><img src="../images/sort_arrow_asc.png"></a></td>
                       </tr>
                       <tr>
                         <td class="base-table__id">1</td>
+                        <td class="base-table__name"><a href="#">Course 1</a></td>
+                        <td class="base-table__sections base-table__asc">1</td>
+                        <td class="base-table__lesson">25</td>
+                        <td class="base-table__points">29/55</td>
+                        <td class="base-table__date"><a href="#">12 nov 2017</a></td>
+                        <td class="base-table__Status"><a href="#">Level 1</a></td>
+                        <td class="base-table__date"><a href="#">12 nov 2017</a></td>
+                        <td class="base-table__rating base-table__asc"><a class="open_hidden_open_block">Exellent</a>
+                          <div class="hidden_open_block"><span class="close"><img src="../images/canc.png"></span>
+                            <div class="hidden_open_block_top"><span>№</span>
+                              <ul class="hidden_open_block_top_nav">
+                                <li class="left_nav"><a href="#"><img src="../images/sort_arrow.png"></a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a class="active" href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">13</a></li>
+                                <li><a href="#">14</a></li>
+                                <li><a href="#">15</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">...</a></li>
+                                <li class="right_nav"><a href="#"><img src="../images/sort_arrow.png"></a></li>
+                              </ul>
+                            </div>
+                            <div class="question_text"><span> Question</span>
+                              <div class="question_text_scroll">
+                                Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                Eam et sale appetere,
+                                timeam inimicus pro et, eum id integre feugait principes.
+                                Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                ne mea copiosae
+                                Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                
+                                
+                              </div>
+                            </div>
+                            <div class="answer_text"><span> Answer</span>
+                              <div class="answer_text_scroll">
+                                Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                Eam et sale appetere,timeam inimicus pro et, eum id integre feugait principes.
+                                Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                ne mea copiosae Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                              </div>
+                            </div>
+                            <div class="hidden_open_assessment">
+                              <form class="hidden_open_assessment_form"><span>Assessment of</span>
+                                <input class="assessment_input" type="text" value="11">
+                                <div class="hidden_open_assessment_form_button">
+                                  <input class="form__submit" type="submit" value="Confirm">
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="base-table__current"><a href="#"><img src="../images/sort_arrow_asc.png"></a></td>
+                      </tr>
+                      <tr>
+                        <td class="base-table__id">1</td>
+                        <td class="base-table__name"><a href="#">Course 1</a></td>
+                        <td class="base-table__sections base-table__asc">1</td>
+                        <td class="base-table__lesson">25</td>
+                        <td class="base-table__points">29/55</td>
+                        <td class="base-table__date"><a href="#">12 nov 2017</a></td>
+                        <td class="base-table__Status"><a href="#">Level 1</a></td>
+                        <td class="base-table__date"><a href="#">12 nov 2017</a></td>
+                        <td class="base-table__rating base-table__asc"><a class="open_hidden_open_block">Exellent</a>
+                          <div class="hidden_open_block"><span class="close"><img src="../images/canc.png"></span>
+                            <div class="hidden_open_block_top"><span>№</span>
+                              <ul class="hidden_open_block_top_nav">
+                                <li class="left_nav"><a href="#"><img src="../images/sort_arrow.png"></a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a class="active" href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">13</a></li>
+                                <li><a href="#">14</a></li>
+                                <li><a href="#">15</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">...</a></li>
+                                <li class="right_nav"><a href="#"><img src="../images/sort_arrow.png"></a></li>
+                              </ul>
+                            </div>
+                            <div class="question_text"><span> Question</span>
+                              <div class="question_text_scroll">
+                                Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                Eam et sale appetere,
+                                timeam inimicus pro et, eum id integre feugait principes.
+                                Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                ne mea copiosae
+                                Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                
+                                
+                              </div>
+                            </div>
+                            <div class="answer_text"><span> Answer</span>
+                              <div class="answer_text_scroll">
+                                Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                Eam et sale appetere,timeam inimicus pro et, eum id integre feugait principes.
+                                Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                ne mea copiosae Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                              </div>
+                            </div>
+                            <div class="hidden_open_assessment">
+                              <form class="hidden_open_assessment_form"><span>Assessment of</span>
+                                <input class="assessment_input" type="text" value="11">
+                                <div class="hidden_open_assessment_form_button">
+                                  <input class="form__submit" type="submit" value="Confirm">
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="base-table__current"><a href="#"><img src="../images/sort_arrow_asc.png"></a></td>
+                      </tr>
+                      <tr>
+                        <td class="base-table__id"></td>
                         <td class="base-table__nam"></td>
                         <td class="base-table__sections base-table__asc"></td>
                         <td class="base-table__lesson"></td>
@@ -109,7 +293,7 @@
                         <td class="base-table__current"></td>
                       </tr>
                       <tr>
-                        <td class="base-table__id">1</td>
+                        <td class="base-table__id"></td>
                         <td class="base-table__name"></td>
                         <td class="base-table__sections base-table__asc"></td>
                         <td class="base-table__lesson"></td>
@@ -121,7 +305,7 @@
                         <td class="base-table__current"></td>
                       </tr>
                       <tr>
-                        <td class="base-table__id">1</td>
+                        <td class="base-table__id"></td>
                         <td class="base-table__name"></td>
                         <td class="base-table__sections base-table__asc"></td>
                         <td class="base-table__lesson"></td>
@@ -133,7 +317,7 @@
                         <td class="base-table__current"></td>
                       </tr>
                       <tr>
-                        <td class="base-table__id">1</td>
+                        <td class="base-table__id"></td>
                         <td class="base-table__name"></td>
                         <td class="base-table__sections base-table__asc"></td>
                         <td class="base-table__lesson"></td>
@@ -145,7 +329,7 @@
                         <td class="base-table__current"></td>
                       </tr>
                       <tr>
-                        <td class="base-table__id">1</td>
+                        <td class="base-table__id"></td>
                         <td class="base-table__name"></td>
                         <td class="base-table__sections base-table__asc"></td>
                         <td class="base-table__lesson"></td>
@@ -157,7 +341,7 @@
                         <td class="base-table__current"></td>
                       </tr>
                       <tr>
-                        <td class="base-table__id">1</td>
+                        <td class="base-table__id"></td>
                         <td class="base-table__name"></td>
                         <td class="base-table__sections base-table__asc"></td>
                         <td class="base-table__lesson"></td>
@@ -169,7 +353,7 @@
                         <td class="base-table__current"></td>
                       </tr>
                       <tr>
-                        <td class="base-table__id">1</td>
+                        <td class="base-table__id"></td>
                         <td class="base-table__name"></td>
                         <td class="base-table__sections base-table__asc"></td>
                         <td class="base-table__lesson"></td>
@@ -181,7 +365,7 @@
                         <td class="base-table__current"></td>
                       </tr>
                       <tr>
-                        <td class="base-table__id">1</td>
+                        <td class="base-table__id"></td>
                         <td class="base-table__name"></td>
                         <td class="base-table__sections base-table__asc"></td>
                         <td class="base-table__lesson"></td>
@@ -193,7 +377,55 @@
                         <td class="base-table__current"></td>
                       </tr>
                       <tr>
-                        <td class="base-table__id">1</td>
+                        <td class="base-table__id"></td>
+                        <td class="base-table__name"></td>
+                        <td class="base-table__sections base-table__asc"></td>
+                        <td class="base-table__lesson"></td>
+                        <td class="base-table__points"></td>
+                        <td class="base-table__date"></td>
+                        <td class="base-table__Status"></td>
+                        <td class="base-table__date"></td>
+                        <td class="base-table__rating base-table__asc"></td>
+                        <td class="base-table__current"></td>
+                      </tr>
+                      <tr>
+                        <td class="base-table__id"></td>
+                        <td class="base-table__name"></td>
+                        <td class="base-table__sections base-table__asc"></td>
+                        <td class="base-table__lesson"></td>
+                        <td class="base-table__points"></td>
+                        <td class="base-table__date"></td>
+                        <td class="base-table__Status"></td>
+                        <td class="base-table__date"></td>
+                        <td class="base-table__rating base-table__asc"></td>
+                        <td class="base-table__current"></td>
+                      </tr>
+                      <tr>
+                        <td class="base-table__id"></td>
+                        <td class="base-table__name"></td>
+                        <td class="base-table__sections base-table__asc"></td>
+                        <td class="base-table__lesson"></td>
+                        <td class="base-table__points"></td>
+                        <td class="base-table__date"></td>
+                        <td class="base-table__Status"></td>
+                        <td class="base-table__date"></td>
+                        <td class="base-table__rating base-table__asc"></td>
+                        <td class="base-table__current"></td>
+                      </tr>
+                      <tr>
+                        <td class="base-table__id"></td>
+                        <td class="base-table__name"></td>
+                        <td class="base-table__sections base-table__asc"></td>
+                        <td class="base-table__lesson"></td>
+                        <td class="base-table__points"></td>
+                        <td class="base-table__date"></td>
+                        <td class="base-table__Status"></td>
+                        <td class="base-table__date"></td>
+                        <td class="base-table__rating base-table__asc"></td>
+                        <td class="base-table__current"></td>
+                      </tr>
+                      <tr>
+                        <td class="base-table__id"></td>
                         <td class="base-table__name"></td>
                         <td class="base-table__sections base-table__asc"></td>
                         <td class="base-table__lesson"></td>
@@ -207,6 +439,18 @@
                     </tbody>
                   </table>
                 </div>
+                <nav class="pagination">
+                  <ul class="pagination__content">
+                    <li class="pagination__item pagination__item_arrow"><a class="pagination__arrow pagination__arrow_prev" href="#">Previous</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+                    <li class="pagination__item"><a class="pagination__link pagination__link_current" href="#">2</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+                    <li class="pagination__item"><a class="pagination__dots" href="#">...</a></li>
+                    <li class="pagination__item pagination__item_arrow"><a class="pagination__arrow pagination__arrow_next" href="#">Next</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
@@ -274,6 +518,8 @@
       <script src="../js/current-device.min.js"></script>
       <script src="../js/jquery.livequery.min.js"></script>
       <script src="../js/plyr.js"></script>
+      <script src="../js/jquery.jscrollpane.min.js"></script>
+      <script src="../js/jquery.mousewheel.js"></script>
       <script>
         function readURL(input) {
         	if (input.files && input.files[0]) {
@@ -286,6 +532,7 @@
         }
       </script>
       <script src="../js/main.js"></script>
+      <script src="../js/new.js"></script>
       <script src="../js/app.js"></script>
     </main>
   </body>

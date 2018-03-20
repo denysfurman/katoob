@@ -12,8 +12,22 @@ block head
                         span.breadcrumbs__this Articles
                     .page__title My Account
                     .account__teacher
-                        .account__header
-                            span Personal information
+                        .download-nav
+                            nav.download-nav__wrap
+                                - var titles = ['Personal information', 'View students scores by tests'];
+                                - var active = 'download-nav__link_active';
+                                each title, key in titles
+                                    if key == 1
+                                        a(
+                                        href="#"
+                                        class="download-nav__link " + active
+                                        )=title
+                                    else
+                                        a(
+                                        href="#"
+                                        class="download-nav__link "
+                                        )=title
+
                         .account__teacher__content
                             .account__teacher__wrap
                                 table.base-table
@@ -28,7 +42,10 @@ block head
                                             th.base-table__Status Status
                                             th.base-table__date Pass date
                                             th.base-table__rating.base-table__asc Rating
-                                            th.base-table__current
+                                            th.base-table__current.no_sort
+                                                span(class="icon-icon_33")
+
+
                                     tbody
                                         tr
                                             td.base-table__id 1
@@ -44,13 +61,16 @@ block head
                                             td.base-table__date
                                                 a(href='#') 12 nov 2017
                                             td.base-table__rating.base-table__asc
-                                                a(href='#') Exellent
+                                                a( class="open_hidden_open_block" ) Exellent
                                                 .hidden_open_block
                                                     span.close
                                                         img(src='../images/canc.png')
                                                     .hidden_open_block_top
                                                         span №
                                                         ul.hidden_open_block_top_nav
+                                                            li.left_nav
+                                                                a(href='#')
+                                                                    img(src="../images/sort_arrow.png")
                                                             li
                                                                 a(href='#') 1
                                                             li
@@ -60,16 +80,276 @@ block head
                                                             li
                                                                 a(href='#') 4
                                                             li
-                                                                a(href='#') 1
+                                                                a(href='#') 5
                                                             li
-                                                                a(href='#') 1
+                                                                a(href='#') 6
                                                             li
-                                                                a(href='#') 1
+                                                                a(href='#') 7
                                                             li
-                                                                a(href='#') 1
-                                            td.base-table__current =
+                                                                a(href='#' class="active") 8
+                                                            li
+                                                                a(href='#') 9
+                                                            li
+                                                                a(href='#') 10
+                                                            li
+                                                                a(href='#') 11
+                                                            li
+                                                                a(href='#') 12
+                                                            li
+                                                                a(href='#') 13
+                                                            li
+                                                                a(href='#') 14
+                                                            li
+                                                                a(href='#') 15
+                                                            li
+                                                                a(href='#') 9
+                                                            li
+                                                                a(href='#') 10
+                                                            li
+                                                                a(href='#') 11
+                                                            li
+                                                                a(href='#') 12
+                                                            li
+                                                                a(href='#') ...
+
+                                                            li.right_nav
+                                                                a(href='#')
+                                                                    img(src="../images/sort_arrow.png")
+                                                    .question_text
+                                                        span  Question
+                                                        .question_text_scroll.
+                                                            Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                                            Eam et sale appetere,
+                                                            timeam inimicus pro et, eum id integre feugait principes.
+                                                            Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                                            ne mea copiosae
+                                                            Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+
+
+                                                    .answer_text
+                                                        span  Answer
+                                                        .answer_text_scroll.
+                                                            Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                                            Eam et sale appetere,timeam inimicus pro et, eum id integre feugait principes.
+                                                            Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                                            ne mea copiosae Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                                    .hidden_open_assessment
+                                                        form.hidden_open_assessment_form
+                                                            span Assessment of
+                                                            input.assessment_input(type='text' value="11")
+
+                                                            .hidden_open_assessment_form_button
+                                                                input.form__submit(type='submit', value='Confirm')
+
+
+
+
+                                            td.base-table__current
+                                                a(href='#')
+                                                    img(src="../images/sort_arrow_asc.png")
                                         tr
                                             td.base-table__id 1
+                                            td.base-table__name
+                                                a(href='#') Course 1
+                                            td.base-table__sections.base-table__asc 1
+                                            td.base-table__lesson 25
+                                            td.base-table__points 29/55
+                                            td.base-table__date
+                                                a(href='#') 12 nov 2017
+                                            td.base-table__Status
+                                                a(href='#') Level 1
+                                            td.base-table__date
+                                                a(href='#') 12 nov 2017
+                                            td.base-table__rating.base-table__asc
+                                                a( class="open_hidden_open_block" ) Exellent
+                                                .hidden_open_block
+                                                    span.close
+                                                        img(src='../images/canc.png')
+                                                    .hidden_open_block_top
+                                                        span №
+                                                        ul.hidden_open_block_top_nav
+                                                            li.left_nav
+                                                                a(href='#')
+                                                                    img(src="../images/sort_arrow.png")
+                                                            li
+                                                                a(href='#') 1
+                                                            li
+                                                                a(href='#') 2
+                                                            li
+                                                                a(href='#') 3
+                                                            li
+                                                                a(href='#') 4
+                                                            li
+                                                                a(href='#') 5
+                                                            li
+                                                                a(href='#') 6
+                                                            li
+                                                                a(href='#') 7
+                                                            li
+                                                                a(href='#' class="active") 8
+                                                            li
+                                                                a(href='#') 9
+                                                            li
+                                                                a(href='#') 10
+                                                            li
+                                                                a(href='#') 11
+                                                            li
+                                                                a(href='#') 12
+                                                            li
+                                                                a(href='#') 13
+                                                            li
+                                                                a(href='#') 14
+                                                            li
+                                                                a(href='#') 15
+                                                            li
+                                                                a(href='#') 9
+                                                            li
+                                                                a(href='#') 10
+                                                            li
+                                                                a(href='#') 11
+                                                            li
+                                                                a(href='#') 12
+                                                            li
+                                                                a(href='#') ...
+
+                                                            li.right_nav
+                                                                a(href='#')
+                                                                    img(src="../images/sort_arrow.png")
+                                                    .question_text
+                                                        span  Question
+                                                        .question_text_scroll.
+                                                            Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                                            Eam et sale appetere,
+                                                            timeam inimicus pro et, eum id integre feugait principes.
+                                                            Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                                            ne mea copiosae
+                                                            Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+
+
+                                                    .answer_text
+                                                        span  Answer
+                                                        .answer_text_scroll.
+                                                            Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                                            Eam et sale appetere,timeam inimicus pro et, eum id integre feugait principes.
+                                                            Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                                            ne mea copiosae Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                                    .hidden_open_assessment
+                                                        form.hidden_open_assessment_form
+                                                            span Assessment of
+                                                            input.assessment_input(type='text' value="11")
+
+                                                            .hidden_open_assessment_form_button
+                                                                input.form__submit(type='submit', value='Confirm')
+
+
+
+
+                                            td.base-table__current
+                                                a(href='#')
+                                                    img(src="../images/sort_arrow_asc.png")
+
+                                        tr
+                                            td.base-table__id 1
+                                            td.base-table__name
+                                                a(href='#') Course 1
+                                            td.base-table__sections.base-table__asc 1
+                                            td.base-table__lesson 25
+                                            td.base-table__points 29/55
+                                            td.base-table__date
+                                                a(href='#') 12 nov 2017
+                                            td.base-table__Status
+                                                a(href='#') Level 1
+                                            td.base-table__date
+                                                a(href='#') 12 nov 2017
+                                            td.base-table__rating.base-table__asc
+                                                a( class="open_hidden_open_block" ) Exellent
+                                                .hidden_open_block
+                                                    span.close
+                                                        img(src='../images/canc.png')
+                                                    .hidden_open_block_top
+                                                        span №
+                                                        ul.hidden_open_block_top_nav
+                                                            li.left_nav
+                                                                a(href='#')
+                                                                    img(src="../images/sort_arrow.png")
+                                                            li
+                                                                a(href='#') 1
+                                                            li
+                                                                a(href='#') 2
+                                                            li
+                                                                a(href='#') 3
+                                                            li
+                                                                a(href='#') 4
+                                                            li
+                                                                a(href='#') 5
+                                                            li
+                                                                a(href='#') 6
+                                                            li
+                                                                a(href='#') 7
+                                                            li
+                                                                a(href='#' class="active") 8
+                                                            li
+                                                                a(href='#') 9
+                                                            li
+                                                                a(href='#') 10
+                                                            li
+                                                                a(href='#') 11
+                                                            li
+                                                                a(href='#') 12
+                                                            li
+                                                                a(href='#') 13
+                                                            li
+                                                                a(href='#') 14
+                                                            li
+                                                                a(href='#') 15
+                                                            li
+                                                                a(href='#') 9
+                                                            li
+                                                                a(href='#') 10
+                                                            li
+                                                                a(href='#') 11
+                                                            li
+                                                                a(href='#') 12
+                                                            li
+                                                                a(href='#') ...
+
+                                                            li.right_nav
+                                                                a(href='#')
+                                                                    img(src="../images/sort_arrow.png")
+                                                    .question_text
+                                                        span  Question
+                                                        .question_text_scroll.
+                                                            Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                                            Eam et sale appetere,
+                                                            timeam inimicus pro et, eum id integre feugait principes.
+                                                            Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                                            ne mea copiosae
+                                                            Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+
+
+                                                    .answer_text
+                                                        span  Answer
+                                                        .answer_text_scroll.
+                                                            Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                                            Eam et sale appetere,timeam inimicus pro et, eum id integre feugait principes.
+                                                            Melius delectus at nec, probo impetus in vel. Ex mei partiendo hendrerit vituperatoribus,
+                                                            ne mea copiosae Lorem ipsum dolor sit amet, eam ad vidisse dignissim, nec nibh epicurei deserunt id.
+                                                    .hidden_open_assessment
+                                                        form.hidden_open_assessment_form
+                                                            span Assessment of
+                                                            input.assessment_input(type='text' value="11")
+
+                                                            .hidden_open_assessment_form_button
+                                                                input.form__submit(type='submit', value='Confirm')
+
+
+
+
+                                            td.base-table__current
+                                                a(href='#')
+                                                    img(src="../images/sort_arrow_asc.png")
+                                        tr
+                                            td.base-table__id
                                             td.base-table__nam
                                             td.base-table__sections.base-table__asc
                                             td.base-table__lesson
@@ -80,7 +360,7 @@ block head
                                             td.base-table__rating.base-table__asc
                                             td.base-table__current
                                         tr
-                                            td.base-table__id 1
+                                            td.base-table__id
                                             td.base-table__name
                                             td.base-table__sections.base-table__asc
                                             td.base-table__lesson
@@ -91,7 +371,7 @@ block head
                                             td.base-table__rating.base-table__asc
                                             td.base-table__current
                                         tr
-                                            td.base-table__id 1
+                                            td.base-table__id
                                             td.base-table__name
                                             td.base-table__sections.base-table__asc
                                             td.base-table__lesson
@@ -102,7 +382,7 @@ block head
                                             td.base-table__rating.base-table__asc
                                             td.base-table__current
                                         tr
-                                            td.base-table__id 1
+                                            td.base-table__id
                                             td.base-table__name
                                             td.base-table__sections.base-table__asc
                                             td.base-table__lesson
@@ -113,7 +393,7 @@ block head
                                             td.base-table__rating.base-table__asc
                                             td.base-table__current
                                         tr
-                                            td.base-table__id 1
+                                            td.base-table__id
                                             td.base-table__name
                                             td.base-table__sections.base-table__asc
                                             td.base-table__lesson
@@ -124,7 +404,7 @@ block head
                                             td.base-table__rating.base-table__asc
                                             td.base-table__current
                                         tr
-                                            td.base-table__id 1
+                                            td.base-table__id
                                             td.base-table__name
                                             td.base-table__sections.base-table__asc
                                             td.base-table__lesson
@@ -135,7 +415,7 @@ block head
                                             td.base-table__rating.base-table__asc
                                             td.base-table__current
                                         tr
-                                            td.base-table__id 1
+                                            td.base-table__id
                                             td.base-table__name
                                             td.base-table__sections.base-table__asc
                                             td.base-table__lesson
@@ -146,7 +426,7 @@ block head
                                             td.base-table__rating.base-table__asc
                                             td.base-table__current
                                         tr
-                                            td.base-table__id 1
+                                            td.base-table__id
                                             td.base-table__name
                                             td.base-table__sections.base-table__asc
                                             td.base-table__lesson
@@ -157,7 +437,7 @@ block head
                                             td.base-table__rating.base-table__asc
                                             td.base-table__current
                                         tr
-                                            td.base-table__id 1
+                                            td.base-table__id
                                             td.base-table__name
                                             td.base-table__sections.base-table__asc
                                             td.base-table__lesson
@@ -167,5 +447,51 @@ block head
                                             td.base-table__date
                                             td.base-table__rating.base-table__asc
                                             td.base-table__current
+                                        tr
+                                            td.base-table__id
+                                            td.base-table__name
+                                            td.base-table__sections.base-table__asc
+                                            td.base-table__lesson
+                                            td.base-table__points
+                                            td.base-table__date
+                                            td.base-table__Status
+                                            td.base-table__date
+                                            td.base-table__rating.base-table__asc
+                                            td.base-table__current
+                                        tr
+                                            td.base-table__id
+                                            td.base-table__name
+                                            td.base-table__sections.base-table__asc
+                                            td.base-table__lesson
+                                            td.base-table__points
+                                            td.base-table__date
+                                            td.base-table__Status
+                                            td.base-table__date
+                                            td.base-table__rating.base-table__asc
+                                            td.base-table__current
+                                        tr
+                                            td.base-table__id
+                                            td.base-table__name
+                                            td.base-table__sections.base-table__asc
+                                            td.base-table__lesson
+                                            td.base-table__points
+                                            td.base-table__date
+                                            td.base-table__Status
+                                            td.base-table__date
+                                            td.base-table__rating.base-table__asc
+                                            td.base-table__current
+
+                                        tr
+                                            td.base-table__id
+                                            td.base-table__name
+                                            td.base-table__sections.base-table__asc
+                                            td.base-table__lesson
+                                            td.base-table__points
+                                            td.base-table__date
+                                            td.base-table__Status
+                                            td.base-table__date
+                                            td.base-table__rating.base-table__asc
+                                            td.base-table__current
+                            include includes/pager.pug
 
         include includes/base/footer.pug
