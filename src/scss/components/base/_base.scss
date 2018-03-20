@@ -269,3 +269,38 @@ img{
 		}
 	}
 }
+.close_image{
+	float: right;
+	font-size: 17px;
+	font-family: 'katoob' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #ccc;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .5;
+	&:before{
+		content: "\e908";
+	}
+}
+.lessons .lessons__row {
+
+	padding: 0 32px 0 4px;
+	flex-direction: row-reverse;
+	@include media(phone){
+		display: inline-block;
+		padding: 10px;
+	}
+
+}
+.lessons  .lessons__view{
+	margin-left: 20px;
+}
+.lessons .lessons__title{
+	padding: 0;
+}
