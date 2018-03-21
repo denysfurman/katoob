@@ -51,67 +51,75 @@
             <div class="breadcrumbs"><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Course</span></div>
             <div class="course course-reduct">
               <form class="course-reduct__form row">
-                <div class="col-xl-4">
-                  <div class="course-reduct__line"><span>Course cover</span><span class="course-reduct__foto-dell"><img src="../images/trash.png"></span></div>
-                  <div class="course-reduct__foto">
-                    <div class="course-reduct__foto_grab"><span>+ Drag the cover here</span></div><img class="course__img" src="../images/course.jpg" alt="">
+                <div class="col-xl-4 col-lg-6 col-md-8">
+                  <div class="course-reduct__wrap">
+                    <div class="course-reduct__line"><span>Course cover</span><a class="course-reduct__foto-dell" href="#"><img src="../images/trash.png"></a></div>
+                    <div class="course-reduct__foto">
+                      <div class="course-reduct__foto_grab"><span>+ Drag the cover here</span></div><img class="course__img" src="../images/course.jpg" alt="">
+                    </div>
                   </div>
                 </div>
-                <div class="col-xl-4">
-                  <div class="course-reduct__line"><span>Course description</span><span class="course-reduct__foto-dell"><img src="../images/trash.png"></span></div>
-                  <div class="course-reduct__information">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="form__item form-group">
-                          <label class="form__label">Subject</label>
-                          <select name="nationality">
-                            <option value="English">English</option>
-                            <option value="Ukraine">Ukraine</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="form__item form-group">
+                <div class="col-xl-4 col-lg-6">
+                  <div class="course-reduct__wrap">
+                    <div class="course-reduct__line"><span>Course description</span><a class="course-reduct__foto-edit" href="#">Edit</a><a class="course-reduct__foto-dell" href="#"><img src="../images/trash.png"></a></div>
+                    <div class="course-reduct__information">
+                      <div class="row">
+                        <div class="col-md-6">
                           <div class="form__item form-group">
-                            <label class="form__label">Price</label>
-                            <input class="form__text form-control" type="text">
+                            <label class="form__label">Subject</label>
+                            <select name="nationality">
+                              <option value="English">English</option>
+                              <option value="Ukraine">Ukraine</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form__item form-group">
+                            <div class="form__item form-group">
+                              <label class="form__label">Price</label>
+                              <input class="form__text form-control" type="text">
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="form__item form-group">
-                      <label class="form__label">Name of the course</label>
-                      <input class="form__text form-control" type="text">
-                    </div>
-                    <div class="form__item form-group">
-                      <label class="form__label">Write text</label>
-                      <textarea class="form__textarea form__textarea_test form-control"></textarea>
+                      <div class="form__item form-group">
+                        <label class="form__label">Name of the course</label>
+                        <input class="form__text form-control" type="text">
+                      </div>
+                      <div class="form__item form-group">
+                        <label class="form__label">Write text</label>
+                        <textarea class="form__textarea form__textarea_test form-control"></textarea>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-4">
-                  <div class="course-reduct__line"><span>Downloads</span><span class="course-reduct__foto-dell"><img src="../images/trash.png"></span></div>
-                  <div class="course-reduct__information">
-                    <div class="form__item form-group form__item_image">
-                      <div class="form__images_plus">
-                        <div class="form__images-wrap">
-                          <label for="registrationImage"><span class="text">Cover dowloads</span><span class="plus">+</span></label>
-                          <input class="form__image form__image_register form-control" id="registrationImage" type="file" name="registration[image]" onchange="readURL(this)">
+                  <div class="course-reduct__wrap">
+                    <div class="course-reduct__line"><span>Downloads</span><a class="course-reduct__foto-edit" href="#">Edit</a><a class="course-reduct__foto-dell" href="#"><img src="../images/trash.png"></a></div>
+                    <div class="course-reduct__information">
+                      <div class="form__item form-group form__item_image">
+                        <div class="form__images_plus">
+                          <div class="form__images-wrap">
+                            <label for="registrationImage"><span class="text">Cover dowloads</span><span class="plus">+</span></label>
+                            <input class="form__image form__image_register form-control" id="registrationImage" type="file" name="registration[image]" onchange="readURL(this)">
+                          </div>
                         </div>
                       </div>
+                      <ul class="course-reduct__information-donwload">
+                        <li><a href="#">It is a long established fact</a></li>
+                        <li><a href="#">It is a long established fact</a></li>
+                        <li><a href="#">It is a long established fact</a></li>
+                      </ul>
                     </div>
-                    <ul class="course-reduct__information-donwload">
-                      <li><a href="#">It is a long established fact</a></li>
-                      <li><a href="#">It is a long established fact</a></li>
-                      <li><a href="#">It is a long established fact</a></li>
-                    </ul>
                   </div>
-                  <div class="course-reduct__form_button">
-                    <div class="form__actions">
-                      <input class="form__submit grey" type="submit" value="Save">
-                    </div>
-                    <div class="form__actions">
-                      <input class="form__submit grey" type="reset" value="Cancel">
+                  <div class="course-reduct__wrap">
+                    <div class="course-reduct__form_button">
+                      <div class="form__actions">
+                        <input class="form__submit grey" type="submit" value="Save">
+                      </div>
+                      <div class="form__actions">
+                        <input class="form__submit grey" type="reset" value="Cancel">
+                      </div>
                     </div>
                   </div>
                 </div>

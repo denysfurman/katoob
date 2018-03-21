@@ -13,80 +13,88 @@ block head
                     .course.course-reduct
                         form.course-reduct__form.row
 
-                            .col-xl-4
-                                .course-reduct__line
-                                    span Course cover
-                                    span.course-reduct__foto-dell
-                                        img(src='../images/trash.png')
+                            .col-xl-4.col-lg-6.col-md-8
+                                .course-reduct__wrap
+                                    .course-reduct__line
+                                        span Course cover
+                                        a(href="#" class="course-reduct__foto-dell")
+                                            img(src='../images/trash.png')
 
-                                .course-reduct__foto
-                                    .course-reduct__foto_grab
-                                        span + Drag the cover here
-                                    img.course__img(
-                                    src="../images/course.jpg",
-                                    alt=""
-                                    )
+                                    .course-reduct__foto
+                                        .course-reduct__foto_grab
+                                            span + Drag the cover here
+                                        img.course__img(
+                                        src="../images/course.jpg",
+                                        alt=""
+                                        )
 
-                            .col-xl-4
-                                .course-reduct__line
-                                    span Course description
-                                    span.course-reduct__foto-dell
-                                        img(src='../images/trash.png')
-                                .course-reduct__information
-                                    .row
-                                        .col-lg-6
-                                            .form__item.form-group
-                                                label.form__label Subject
-                                                select(name='nationality')
-                                                    option(value='English') English
-                                                    option(value='Ukraine') Ukraine
-                                        .col-lg-6
-                                            .form__item.form-group
+                            .col-xl-4.col-lg-6
+                                .course-reduct__wrap
+                                    .course-reduct__line
+                                        span Course description
+                                        a(href="#" class="course-reduct__foto-edit") Edit
+                                        a(href="#" class="course-reduct__foto-dell")
+                                            img(src='../images/trash.png')
+
+
+                                    .course-reduct__information
+                                        .row
+                                            .col-md-6
                                                 .form__item.form-group
-                                                    label.form__label Price
-                                                    input.form__text.form-control(type='text')
-                                    .form__item.form-group
-                                        label.form__label Name of the course
-                                        input.form__text.form-control(type='text')
+                                                    label.form__label Subject
+                                                    select(name='nationality')
+                                                        option(value='English') English
+                                                        option(value='Ukraine') Ukraine
+                                            .col-md-6
+                                                .form__item.form-group
+                                                    .form__item.form-group
+                                                        label.form__label Price
+                                                        input.form__text.form-control(type='text')
+                                        .form__item.form-group
+                                            label.form__label Name of the course
+                                            input.form__text.form-control(type='text')
 
 
-                                    .form__item.form-group
-                                        label.form__label Write text
-                                        textarea.form__textarea.form__textarea_test.form-control
+                                        .form__item.form-group
+                                            label.form__label Write text
+                                            textarea.form__textarea.form__textarea_test.form-control
 
 
 
 
                             .col-xl-4
-                                .course-reduct__line
-                                    span Downloads
-                                    span.course-reduct__foto-dell
-                                        img(src='../images/trash.png')
-                                .course-reduct__information
+                                .course-reduct__wrap
+                                    .course-reduct__line
+                                        span Downloads
+                                        a(href="#" class="course-reduct__foto-edit") Edit
+                                        a(href="#" class="course-reduct__foto-dell")
+                                            img(src='../images/trash.png')
+                                    .course-reduct__information
 
-                                    .form__item.form-group.form__item_image
-                                        .form__images_plus
-                                            .form__images-wrap
-                                                label(for='registrationImage')
+                                        .form__item.form-group.form__item_image
+                                            .form__images_plus
+                                                .form__images-wrap
+                                                    label(for='registrationImage')
 
-                                                    span.text
-                                                        | Cover dowloads
-                                                    span.plus +
+                                                        span.text
+                                                            | Cover dowloads
+                                                        span.plus +
 
-                                                input#registrationImage.form__image.form__image_register.form-control(type='file', name='registration[image]', onchange='readURL(this)')
+                                                    input#registrationImage.form__image.form__image_register.form-control(type='file', name='registration[image]', onchange='readURL(this)')
 
-                                    ul.course-reduct__information-donwload
-                                        li
-                                            a(href="#") It is a long established fact
-                                        li
-                                            a(href="#") It is a long established fact
-                                        li
-                                            a(href="#") It is a long established fact
-                                .course-reduct__form_button
-                                    .form__actions
-                                        input.form__submit.grey(type='submit', value='Save')
-                                    .form__actions
-                                        input.form__submit.grey(type='reset', value='Cancel')
+                                        ul.course-reduct__information-donwload
+                                            li
+                                                a(href="#") It is a long established fact
+                                            li
+                                                a(href="#") It is a long established fact
+                                            li
+                                                a(href="#") It is a long established fact
+                                .course-reduct__wrap
+                                    .course-reduct__form_button
+                                        .form__actions
+                                            input.form__submit.grey(type='submit', value='Save')
+                                        .form__actions
+                                            input.form__submit.grey(type='reset', value='Cancel')
 
 
 
