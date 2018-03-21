@@ -14,7 +14,7 @@
     height: 220px;
   }
   &__file{
-    margin-top: 20px;
+    margin-top: 15px;
   }
   &__addfile{
     font-weight: 400;
@@ -161,6 +161,9 @@
       }
 
     }
+    .plyr__time--current{
+      font-style: italic;
+    }
 
   }
 
@@ -298,6 +301,7 @@
         position: absolute;
         left: 125px;
         right: 0;
+        top: 7px;
         bottom: 41px;
         z-index: 2;
         padding: 50px 10px 10px;
@@ -524,10 +528,40 @@
   background-color: #fff;
   border: 1px solid #e9e9e9;
   margin-top: 10px;
-  padding-left: 10px;
+  padding-left: 15px;
   .file_name{
     font-size: 30px;
     font-weight: 300;
+    line-height: 50px;
+  }
+}
+
+.form__actions.add-test_butt{
+  margin-top: 30px;
+  text-align: left;
+  .form__submit.grey{
+    background-color: #f5f5f5;
+    color: #231e18!important;
+    
+    padding: 10px 30px;
+    &:hover{
+      background-color: $color_brand;
+      color: #fff!important;
+      
+    }
+  }
+}
+
+
+.add_test-test{
+  margin-top: 30px;
+  .add_test-test_title {
+    color: #231e18;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
     line-height: 32px;
+    text-transform: uppercase;
+    margin-left: -20px;
   }
 }
