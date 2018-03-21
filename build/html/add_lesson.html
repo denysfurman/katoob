@@ -13,7 +13,7 @@
   </head>
   <body>
     <main class="wrapper wrapper_not-front">
-      <div class="wrapper__content">
+      <div class="wrapper__content wrapper__content_backing">
         <header class="header">
           <div class="header__actions">
             <div class="header__content container-fluid">
@@ -48,115 +48,63 @@
             </div>
           </nav>
           <div class="container-fluid">
-            <div class="breadcrumbs"><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Exams</span></div>
-            <div class="test">
-              <form class="test-form">
-                <div class="form__item form-group form__item_test">
-                  <label class="form__label">Course</label>
-                  <select name="nationality">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
+            <div class="breadcrumbs"><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Course</span><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Course 2</span><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Course 3</span></div>
+            <div class="add-lesson">
+              <div class="page__title">Add lesson</div>
+              <form class="add-lesson__form">
+                <div class="add-lesson__addfile_header">Files for lesson</div>
+                <div class="add-lesson__addfile">
+                  <div class="form__item form-group form__item_image">
+                    <div class="form__images-wrap">
+                      <label for="registrationImage">+ Add files
+                        <input class="form__image form__image_register form-control" id="registrationImage" type="file" name="registration[image]" onchange="readURL(this)">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__item form-group">
+                    <label class="form__label">Select level</label>
+                    <select name="Select level">
+                      <option value="level 1">level 1</option>
+                      <option value="level 2">level 2</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="form__item form-group form__item_test">
-                  <label class="form__label">Section</label>
-                  <select name="nationality">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
-                </div>
-                <div class="form__item form__item_test form__item_dates">
-                  <label class="form__label">Date</label>
-                  <div class="form__value">07.03.2018</div>
-                </div>
-                <div class="form__item form__item_test form__item_time">
-                  <label class="form__label">Time</label>
-                  <div class="form__value">12:00 am</div>
-                </div>
-                <div class="form__item form__item_test form__item_duration">
-                  <label class="form__label">Exam duration</label>
-                  <div class="form__value form__value_duration">03:33<span>.50</span></div>
-                </div>
-                <div class="form__item form__item_test form__item_total">
-                  <label class="form__label">Total questions</label>
-                  <div class="form__value">999999</div>
-                </div>
-                <div class="form__item form__item_test form__item_answer">
-                  <label class="form__label">Questions answered</label>
-                  <div class="form__value">999999</div>
-                </div>
-              </form>
-              <div class="test__content base__text">
-                <div class="test__row">
-                  <div class="test__title"> <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like) </span>
-                    <div class="test-chosen">
-                      <div class="test-chosen__label">Select...</div>
-                      <div class="test-chosen__dropdown">
-                        <div class="test-chosen__close"></div>
-                        <div class="test-chosen__content">
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer1" checked>
-                            <label for="answer1">Answer 1</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer2" checked>
-                            <label for="answer2">Answer 2</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer3" checked>
-                            <label for="answer3">Answer 3</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer4" checked>
-                            <label for="answer4">Answer 4</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer5" checked>
-                            <label for="answer5">Answer 5</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer6" checked>
-                            <label for="answer6">Answer 6</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div><span>Many desktop publishing packages and web page editors now use Lorem Ipsum</span>
-                    <div class="test-chosen">
-                      <div class="test-chosen__label">Select...</div>
-                      <div class="test-chosen__dropdown">
-                        <div class="test-chosen__close"></div>
-                        <div class="test-chosen__content">
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer1" checked>
-                            <label for="answer1">Answer 1</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer2" checked>
-                            <label for="answer2">Answer 2</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer3" checked>
-                            <label for="answer3">Answer 3</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer4" checked>
-                            <label for="answer4">Answer 4</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer5" checked>
-                            <label for="answer5">Answer 5</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer6" checked>
-                            <label for="answer6">Answer 6</label>
-                          </div>
+                <div class="add-lesson__file">
+                  <div class="add-lesson__file_header"><span class="add-lesson_title">The first course of lectures is the second</span>
+                    <div class="add-lesson__file_button">
+                      <div class="add-lesson_addcolor"><a class="button_color" href="#">Color</a>
+                        <div class="change_color"><span class="close"></span><span class="change_color_title">Change Color</span>
+                          <ul>
+                            <li><a class="color_1 active" href="#"></a></li>
+                            <li><a class="color_2" href="#"></a></li>
+                            <li><a class="color_3" href="#"></a></li>
+                            <li><a class="color_4" href="#"></a></li>
+                            <li><a class="color_5" href="#"></a></li>
+                            <li><a class="color_6" href="#"></a></li>
+                            <li><a class="color_7" href="#"></a></li>
+                            <li><a class="color_8" href="#"></a></li>
+                            <li><a class="color_9" href="#"></a></li>
+                            <li><a class="color_10" href="#"></a></li>
+                            <li><a class="color_11" href="#"></a></li>
+                            <li><a class="color_12" href="#"></a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="add-lesson__file_audio">
+                    <div class="download__audios">
+                      <audio class="download__audio" src="../audio/audio.mp3"></audio>
+                    </div>
+                  </div>
+                  <div class="add_text_hidden">
+                    <div class="panel-text"><img src="../images/panel.jpg"></div>
+                    <div class="form__item form-group">
+                      <textarea class="form__textarea form__textarea_test form-control"></textarea>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="test__footer"> <a class="test__back" href="#">backward</a><a class="test__next" href="#">next</a></div>
+              </form>
             </div>
           </div>
         </div>

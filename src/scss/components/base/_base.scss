@@ -304,3 +304,13 @@ img{
 .lessons .lessons__title{
 	padding: 0;
 }
+
+
+.dropdown.open{
+	.dropdown_menu {
+		display: block;
+	}
+}
+.header__content{
+	z-index: 51;
+}

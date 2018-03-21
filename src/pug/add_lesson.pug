@@ -1,0 +1,92 @@
+extend includes/base/head
+block head
+    main.wrapper.wrapper_not-front
+        .wrapper__content.wrapper__content_backing
+            include includes/base/header.pug
+            .wrapper__middle
+                include includes/base/navigation.pug
+                .container-fluid
+                    .breadcrumbs
+                        a.breadcrumbs__link.breadcrumbs__link_home(href="home.html") Home
+                        span.breadcrumbs__sep /
+                        span.breadcrumbs__this Course
+                        span.breadcrumbs__sep /
+                        span.breadcrumbs__this Course 2
+                        span.breadcrumbs__sep /
+                        span.breadcrumbs__this Course 3
+                    .add-lesson
+                        .page__title Add lesson
+                        form.add-lesson__form
+                            .add-lesson__addfile_header Files for lesson
+                            .add-lesson__addfile
+                                .form__item.form-group.form__item_image
+                                    .form__images-wrap
+                                        label(for='registrationImage') + Add files
+
+                                            input#registrationImage.form__image.form__image_register.form-control(type='file', name='registration[image]', onchange='readURL(this)')
+                                .form__item.form-group
+                                    label.form__label Select level
+                                    select(name='Select level')
+                                        option(value='level 1') level 1
+                                        option(value='level 2') level 2
+
+                            .add-lesson__file
+                                .add-lesson__file_header
+                                    span.add-lesson_title The first course of lectures is the second
+                                    .add-lesson__file_button
+                                        .add-lesson_addcolor
+                                            a(href="#").button_color Color
+                                            .change_color
+                                                span.close
+                                                span.change_color_title Change Color
+                                                ul
+                                                    li
+                                                        a(href="#").color_1.active
+                                                    li
+                                                        a(href="#").color_2
+                                                    li
+                                                        a(href="#").color_3
+                                                    li
+                                                        a(href="#").color_4
+                                                    li
+                                                        a(href="#").color_5
+                                                    li
+                                                        a(href="#").color_6
+                                                    li
+                                                        a(href="#").color_7
+                                                    li
+                                                        a(href="#").color_8
+                                                    li
+                                                        a(href="#").color_9
+                                                    li
+                                                        a(href="#").color_10
+                                                    li
+                                                        a(href="#").color_11
+                                                    li
+                                                        a(href="#").color_12
+
+
+
+
+
+                                .add-lesson__file_audio
+                                    .download__audios
+                                        audio.download__audio(
+                                        src="../audio/audio.mp3"
+                                        )
+                                .add_text_hidden
+                                    .panel-text
+                                        img(src="../images/panel.jpg")
+                                    .form__item.form-group
+
+                                        textarea.form__textarea.form__textarea_test.form-control
+
+
+
+
+
+
+
+
+
+        include includes/base/footer.pug
