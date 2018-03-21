@@ -86,7 +86,7 @@
   &__file_audio{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     width: 100%;
@@ -163,13 +163,182 @@
     }
 
   }
-}
 
+  &__file_audio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    margin-top: 10px;
+
+    &.open{
+      box-shadow: 1px 3px 18px rgba(0, 0, 0, 0.11);
+      border: none;
+    }
+    .download__audios{
+      width: calc(100% - 200px);
+
+
+
+      .plyr--audio {
+        padding-left: 50px;
+        background-color: #fff;
+        .plyr__play-large {
+          display: inline-block;
+          left: 25px;
+          width: 29px;
+          height: 29px;
+          background-color: #dedede;
+          box-shadow: none;
+          border: none;
+          &:hover{
+            background-color: #ccc;
+          }
+          svg {
+            position: relative;
+            left: -1px;
+            width: 13px;
+            height: 11px;
+            display: block;
+            fill: currentColor;
+          }
+        }
+        &.plyr--ready.plyr--playing .plyr__play-large {
+          opacity: 1!important;
+          visibility: visible!important;
+          background-image: url("../../images/pause.svg");
+          background-size: 12px;
+          background-position: center;
+          background-repeat: no-repeat;
+          svg{
+            display: none;
+          }
+
+        }
+        .plyr__controls{
+          border: none;
+        }
+
+      }
+      .plyr--audio .plyr__progress--buffer, .plyr--audio .plyr__volume--display {
+        background-color: #9f9e9c;
+        color: #9f9e9c;
+      }
+      .plyr__progress--buffer {
+        position: absolute;
+        left: 0;
+        top: 15px;
+        width: 100%;
+        height: 2px;
+
+      }
+      .plyr input[type=range] {
+        display: block;
+        height: 23px;
+      }
+
+
+    }
+
+
+    .download__videos{
+      width: calc(100% - 30px);
+
+      .plyr video {
+
+        width: 100%;
+        height: 125px!important;
+        background-color: #000;
+
+      }
+      .plyr__video-wrapper{
+        background-color: #fff;
+      }
+
+
+
+
+
+      .plyr  {
+        min-width: 125px;
+        .plyr__play-large {
+          display: inline-block;
+          left: 62px;
+          width: 29px;
+          height: 29px;
+          background-color: rgba(0, 0, 0, 0.44);
+          box-shadow: none;
+          border: none;
+          &:hover{
+            background-color: #ccc;
+          }
+          svg {
+            position: relative;
+            left: -1px;
+            width: 13px;
+            height: 11px;
+            display: block;
+            fill: currentColor;
+          }
+
+        }
+        video{
+          width: 125px;
+        }
+
+
+
+      }
+
+      .plyr--video .plyr__controls {
+        position: absolute;
+        left: 125px;
+        right: 0;
+        bottom: 41px;
+        z-index: 2;
+        padding: 50px 10px 10px;
+
+        color: #000;
+        background: #fff;
+        -webkit-transition: opacity .3s ease;
+        transition: opacity .3s ease;
+      }
+      .plyr--video .plyr__progress--buffer {
+        color: #9f9e9c;
+      }
+
+      .plyr--video .plyr__progress--buffer, .plyr--video .plyr__volume--display {
+        background: #9f9e9c;
+      }
+      .plyr__progress--buffer, .plyr__progress--played, .plyr__volume--display {
+
+        top: 13px;
+        width: 100%;
+        height: 2px;
+
+      }
+      .plyr--hide-controls .plyr__controls{
+        opacity: 1!important;
+      }
+
+
+
+    }
+
+  }
+}
+.add-lesson__file.video .add-lesson__file_audio_inf{
+  width: 30px;
+}
 .add-lesson__file_header{
   text-align: left;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   align-items: center;
@@ -180,6 +349,11 @@
   }
   .add-lesson__file_button{
     position: relative;
+
+    width: 180px;
+    .open_text_panel{
+      float: right;
+    }
     .change_color{
       width: 293px;
       border-radius: 20px;
@@ -200,6 +374,25 @@
         bottom: -15px;
         right: 30px;
         display: inline-block;
+      }
+      .close{
+        float: right;
+        font-size: 17px;
+        font-family: 'katoob' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #ccc;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .5;
+        &:before{
+          content: "\e908";
+        }
       }
       ul{
         display: flex;
@@ -230,7 +423,6 @@
               transform: scale3d(1.2, 1.2 , 1.2);
             }
             &.active{
-
               box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
               transform: scale3d(2, 2 , 2);
             }
@@ -264,4 +456,78 @@
 .add-lesson_addcolor{
   position: relative;
   display: inline-block;
+  .button_color{
+    &:hover{
+      text-decoration: none;
+    }
+    &:after{
+      content: "..";
+      color: #cbcbcb;
+      font-size: 30px;
+      margin-left: 3px;
+      line-height: 0;
+    }
+  }
+}
+.panel-text{
+  img{
+    width: 100%;
+  }
+}
+.add-lesson__file_audio_inf{
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  .add-lesson__file_color{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #c55e5e;
+    margin-left: 13px;
+
+  }
+  .add-lesson__file_remove_text{
+    margin-right: 15px;
+
+    img{
+      width: 17px;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+}
+.add_text_hidden{
+  display: none;
+  .form__actions{
+    text-align: right;
+
+
+  }
+  .form__submit{
+    min-width: 133px;
+  }
+}
+
+.add-lesson__file_all{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+  margin-top: 10px;
+  padding-left: 10px;
+  .file_name{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+  }
 }
