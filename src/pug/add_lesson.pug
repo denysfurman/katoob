@@ -73,8 +73,8 @@ block head
                                         src="../audio/audio.mp3"
                                         )
                                     .add-lesson__file_audio_inf
-                                        a.add-lesson__file_color
-                                        a.add-lesson__file_remove_text
+                                        a(href="#").add-lesson__file_color
+                                        a(href="#").add-lesson__file_remove_text
                                             img(src="../images/trash.png")
 
                                 .add_text_hidden
@@ -126,8 +126,8 @@ block head
                                 .add-lesson__file_all
                                     .file_name .rar
                                     .add-lesson__file_audio_inf
-                                        a.add-lesson__file_color
-                                        a.add-lesson__file_remove_text
+                                        a(href="#").add-lesson__file_color
+                                        a(href="#").add-lesson__file_remove_text
                                             img(src="../images/trash.png")
 
                                 .add_text_hidden
@@ -138,7 +138,7 @@ block head
                                     span.add-lesson_title The first course of lectures is the second
                                     .add-lesson__file_button
 
-                                        a.open_text_panel(href="#") Add Text
+                                        a(href="#").open_text_panel Add Text
 
 
                                 .add-lesson__file_audio
@@ -146,9 +146,12 @@ block head
                                         video.download__vid(
                                         src="../video/video.mp4"
                                         )
+                                        a(href="#").open_full
+                                            img(src="../images/fullscreen.png")
+
                                     .add-lesson__file_audio_inf
 
-                                        a.add-lesson__file_remove_text
+                                        a(href="#").add-lesson__file_remove_text
                                             img(src="../images/trash.png")
 
                                 .add_text_hidden
@@ -192,8 +195,8 @@ block head
                                 .add-lesson__file_all
                                     .file_name .doc
                                     .add-lesson__file_audio_inf
-                                        a.add-lesson__file_color
-                                        a.add-lesson__file_remove_text
+                                        a(href="#").add-lesson__file_color
+                                        a(href="#").add-lesson__file_remove_text
                                             img(src="../images/trash.png")
 
                                 .add_text_hidden
@@ -232,13 +235,13 @@ block head
                                                         a(href="#").color_11
                                                     li
                                                         a(href="#").color_12
-                                        a.open_text_panel(href="#") Add Text
+                                        a(href="#").open_text_panel Add Text
 
                                 .add-lesson__file_all
                                     .file_name .other files
                                     .add-lesson__file_audio_inf
-                                        a.add-lesson__file_color
-                                        a.add-lesson__file_remove_text
+                                        a(href="#").add-lesson__file_color
+                                        a(href="#").add-lesson__file_remove_text
                                             img(src="../images/trash.png")
 
                                 .add_text_hidden
@@ -251,9 +254,96 @@ block head
 
                         .add_test-test
                             .add_test-test_title test 1
-                             .row
+                            .row
                                  .col-md-6
-                                     form
+                                     form.add-test__text
+                                         .add-test__text_title
+                                             span Your question
+
+                                         .form__item.form-group
+
+                                             textarea.form__textarea.form__textarea_test.form-control.
+                                                 Pellentesque lobortis risus vel laoreet lacinia. Morbi vitae luctus elit, non iaculis augue.  Aenean eget venenatis mi, sit amet tristique justo. Morbi facilisis leo a dictum tincidunt. Vestibulum?
+
+                                         .form__actions
+                                             input.form__submit.grey(type='submit', value='Publish')
+
+                                     form.add-test__text
+                                         .add-test__text_title
+                                             span Your question
+                                             a(href="#") Add  more +
+                                         .form__item.form-group
+
+                                             textarea.form__textarea.form__textarea_test.form-control.
+                                                 Pellentesque lobortis risus vel laoreet lacinia. Morbi vitae luctus elit, non iaculis augue.  Aenean eget venenatis mi, sit amet tristique justo. Morbi facilisis leo a dictum tincidunt. Vestibulum?
+
+                                         .form__actions
+                                             input.form__submit.grey(type='submit', value='Publish')
+
+
+                                     form.add-test__text
+                                         .add-test__text_title
+                                             span Your question
+                                             a(href="#") Remove
+                                         .form__item.form-group
+                                             textarea.form__textarea.form__textarea_test.form-control(placeholder="Write were")
+                                         .form__actions
+                                             input.form__submit.grey(type='submit', value='Publish')
+
+
+                                     form.add-test__text
+                                         .add-test__text_title
+                                             span Your question
+                                             a(href="#") Remove
+                                         .form__item.form-group
+
+                                             textarea.form__textarea.form__textarea_test.form-control(placeholder="Write were")
+                                         .form__actions
+                                             input.form__submit.grey(type='submit', value='Publish')
+
+
+                                 .col-md-6
+                                     form.add-test__check
+                                         .add-test__check_title Your question and answers to test
+                                         .test__content
+                                             .test__title It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as oppos ed to using 'Content here, content here', making it look like readable English.
+                                                 .test__buttons
+                                                     - var count = 4;
+                                                     -for (var i = 1; i <= count; i++){
+                                                     .form__radios
+                                                         input.form__radio(
+                                                         type="radio"
+                                                         name="answer"
+                                                         id="answer_" + i
+                                                         checked
+                                                         )
+                                                         label(
+                                                         for="answer_" + i
+                                                         ) Answer
+                                                     - }
+                                         .form__actions
+                                             input.form__submit(type='submit', value='Publish')
+
+                                     form.add-test__check
+                                         .add-test__check_title Your question and answers to test
+                                         .test__content
+                                             .test__title It is a long established fact that a reader will be distracted .
+                                                 .test__buttons
+                                                     - var count = 4;
+                                                     -for (var i = 1; i <= count; i++){
+                                                     .form__radios
+                                                         input.form__radio(
+                                                         type="radio"
+                                                         name="answer"
+                                                         id="answer_" + i
+                                                         checked
+                                                         )
+                                                         label(
+                                                         for="answer_" + i
+                                                         ) Answer
+                                                     - }
+                                         .form__actions
+                                             input.form__submit(type='submit', value='Publish')
 
 
 
