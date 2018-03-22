@@ -348,7 +348,7 @@
         position: absolute;
         left: 125px;
         right: 0;
-        top: 7px;
+        top: 3px;
         bottom: 41px;
         z-index: 2;
         padding: 50px 10px 10px;
@@ -357,9 +357,7 @@
         background: #fff;
         -webkit-transition: opacity .3s ease;
         transition: opacity .3s ease;
-        @include media(phone){
-          top: 2px;
-        }
+
       }
       .plyr--video .plyr__progress--buffer {
         color: #9f9e9c;
@@ -591,11 +589,14 @@
   }
 }
 .add_text_hidden{
-  display: none;
+
   .form__actions{
     text-align: right;
 
 
+  }
+  .form__textarea_test{
+    margin-top: 10px;
   }
   .form__submit{
     min-width: 133px;
@@ -617,6 +618,12 @@
     font-size: 30px;
     font-weight: 300;
     line-height: 50px;
+    width: calc(100% - 190px);
+    text-align: left;
+    @include media(phone){
+      width: calc(100% - 80px);
+    }
+
   }
 }
 
@@ -746,4 +753,41 @@
   span{
     font-weight: 700;
   }
+}
+
+.scroll-pane {
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+  position: relative;
+}
+.horizontal-only {
+  height: auto;
+  max-height: 200px;
+}
+.question_text{
+  position: relative;
+}
+#pell{
+  text-align: left;
+  margin-top: 20px;
+  box-shadow: 1px 3px 18px rgba(0, 0, 0, 0.11);
+
+}
+
+.pell-actionbar{
+  border: 1px solid #e9e9e9;
+  border-bottom: none;
+  padding: 5px;
+
+}
+.pell-content{
+  background-color: #fff;
+  padding: 0 10px;
+  border: 1px solid #e9e9e9;
+  height: 180px!important;
+}
+.pell-button {
+
+  font-size: 18px;
 }

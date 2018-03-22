@@ -318,3 +318,7 @@ img{
 	-webkit-appearance: none;
 	appearance: none;
 }
+.language__item_ar .language__link.language__link_active::after{
+	left: initial;
+	right: 4px;
+}

@@ -28,4 +28,22 @@ $(function() {
         return false;
 
     });
+
+    $('.open_text_panel').click(function(){
+        $(this).parents(".add-lesson__file").sibling('.add_text_hidden').fadeIn();
+        return false;
+    });
+
+    var editor = window.pell.init({
+        element: document.getElementById('pell'),
+        defaultParagraphSeparator: 'p',
+        styleWithCSS: false,
+
+        onChange: function (html) {
+            // document.getElementById('text-output').innerHTML = html
+            // document.getElementById('html-output').textContent = html
+            //console.log(html);
+        }
+    })
 });
+
