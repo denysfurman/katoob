@@ -322,3 +322,56 @@ img{
 	left: initial;
 	right: 4px;
 }
+
+.main-slider__image {
+
+	width: 100%;
+	overflow: hidden;
+}
+
+.slick-slide img {
+	display: block;
+	width: 100%;
+	max-width: initial;
+	object-fit: cover;
+	height: 614px;
+}
+
+
+.selectize-dropdown {
+	max-height: 390px;
+	overflow: auto!important;
+}
+.error_message{
+	padding-left: 0px;
+	color: #ff5720;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+
+
+.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
+	background-image: url(../images/mCSB_buttons.png)!important;
+
+}
+
+.mCS-inset.mCSB_scrollTools .mCSB_buttonUp, .mCS-inset-2.mCSB_scrollTools .mCSB_buttonUp, .mCS-inset-3.mCSB_scrollTools .mCSB_buttonUp {
+	background-position: center!important;
+	background-image: url("../images/sort_arrow.png")!important;
+}
+
+.mCS-inset.mCSB_scrollTools .mCSB_buttonDown, .mCS-inset-2.mCSB_scrollTools .mCSB_buttonDown, .mCS-inset-3.mCSB_scrollTools .mCSB_buttonDown {
+	background-position: center!important;
+	background-image: url("../images/sort_arrow_asc.png")!important;
+}
+.mCS-inset.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+
+	background-color: #d1d0d0!important;
+}
+
+.mCS-inset.mCSB_scrollTools .mCSB_draggerRail {
+	width: 12px;
+
+	background-color: transparent!important;
+}
