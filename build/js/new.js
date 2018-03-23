@@ -1,8 +1,11 @@
 $(function() {
 
     $('.account__teacher__wrap .open_hidden_open_block').click(function(){
-
+        $('.hidden_open_block').fadeOut();
         $(this).next('.hidden_open_block').slideToggle();
+
+
+        return false;
     });
 
 
