@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../css/pell.css">
     <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css">
     <main class="wrapper wrapper_not-front">
-      <div class="wrapper__content">
+      <div class="wrapper__content wrapper__content_backing">
         <header class="header">
           <div class="header__actions">
             <div class="header__content container-fluid">
@@ -48,115 +48,70 @@
             </div>
           </nav>
           <div class="container-fluid">
-            <div class="breadcrumbs"><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Exams</span></div>
-            <div class="test">
-              <form class="test-form">
-                <div class="form__item form-group form__item_test">
-                  <label class="form__label">Course</label>
-                  <select name="nationality">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
+            <div class="breadcrumbs"><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Course</span></div>
+            <div class="course course-reduct">
+              <form class="course-reduct__form row">
+                <div class="col-xl-4 col-lg-6 col-md-8">
+                  <div class="course-reduct__wrap">
+                    <div class="course-reduct__line"><span>Article cover</span><a class="course-reduct__foto-dell" href="#"><img src="../images/trash.png"></a></div>
+                    <div class="course-reduct__foto">
+                      <div class="course-reduct__foto_grab"><span>+ Drag the cover here</span></div><img class="course__img" src="../images/course.jpg" alt="">
+                    </div>
+                  </div>
                 </div>
-                <div class="form__item form-group form__item_test">
-                  <label class="form__label">Section</label>
-                  <select name="nationality">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
-                </div>
-                <div class="form__item form__item_test form__item_dates">
-                  <label class="form__label">Date</label>
-                  <div class="form__value">07.03.2018</div>
-                </div>
-                <div class="form__item form__item_test form__item_time">
-                  <label class="form__label">Time</label>
-                  <div class="form__value">12:00 am</div>
-                </div>
-                <div class="form__item form__item_test form__item_duration">
-                  <label class="form__label">Exam duration</label>
-                  <div class="form__value form__value_duration">03:33<span>.50</span></div>
-                </div>
-                <div class="form__item form__item_test form__item_total">
-                  <label class="form__label">Total questions</label>
-                  <div class="form__value">999999</div>
-                </div>
-                <div class="form__item form__item_test form__item_answer">
-                  <label class="form__label">Questions answered</label>
-                  <div class="form__value">999999</div>
-                </div>
-              </form>
-              <div class="test__content base__text">
-                <div class="test__row">
-                  <div class="test__title"> <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like) </span>
-                    <div class="test-chosen">
-                      <div class="test-chosen__label">Select...</div>
-                      <div class="test-chosen__dropdown">
-                        <div class="test-chosen__close"></div>
-                        <div class="test-chosen__content">
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer1" checked>
-                            <label for="answer1">Answer 1</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer2" checked>
-                            <label for="answer2">Answer 2</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer3" checked>
-                            <label for="answer3">Answer 3</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer4" checked>
-                            <label for="answer4">Answer 4</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer5" checked>
-                            <label for="answer5">Answer 5</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer6" checked>
-                            <label for="answer6">Answer 6</label>
-                          </div>
-                        </div>
+                <div class="col-xl-4 col-lg-6">
+                  <div class="course-reduct__wrap">
+                    <div class="course-reduct__line"><span>Article description</span><a class="course-reduct__foto-edit" href="#">Edit</a><a class="course-reduct__foto-dell" href="#"><img src="../images/trash.png"></a></div>
+                    <div class="course-reduct__information">
+                      <div class="form__item form-group">
+                        <label class="form__label">Name of the article</label>
+                        <input class="form__text form__text_mod" type="text">
                       </div>
-                    </div><span>Many desktop publishing packages and web page editors now use Lorem Ipsum</span>
-                    <div class="test-chosen">
-                      <div class="test-chosen__label">Select...</div>
-                      <div class="test-chosen__dropdown">
-                        <div class="test-chosen__close"></div>
-                        <div class="test-chosen__content">
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer1" checked>
-                            <label for="answer1">Answer 1</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer2" checked>
-                            <label for="answer2">Answer 2</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer3" checked>
-                            <label for="answer3">Answer 3</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer4" checked>
-                            <label for="answer4">Answer 4</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer5" checked>
-                            <label for="answer5">Answer 5</label>
-                          </div>
-                          <div class="form__radios">
-                            <input class="form__radio" type="radio" name="answer" id="answer6" checked>
-                            <label for="answer6">Answer 6</label>
-                          </div>
-                        </div>
+                      <div class="form-group">
+                        <label class="form__label" for="tag_add">Add tags</label>
+                        <input class="form-control" id="tag_add" type="text" value="music" name="tag_add" data-role="tagsinput">
+                      </div>
+                      <div class="form__item form-group">
+                        <label class="form__label">Write text</label>
+                        <textarea class="form__textarea form__textarea_test form-control"></textarea>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="test__footer"> <a class="test__back" href="#">backward</a><a class="test__next" href="#">next</a></div>
+                <div class="col-xl-4">
+                  <div class="course-reduct__wrap">
+                    <div class="course-reduct__line"><span>Downloads</span><a class="course-reduct__foto-edit" href="#">Edit</a><a class="course-reduct__foto-dell" href="#"><img src="../images/trash.png"></a></div>
+                    <div class="course-reduct__information">
+                      <div class="form__item form-group form__item_image">
+                        <div class="form__images_plus">
+                          <div class="form__images-wrap">
+                            <label for="registrationImage"><span class="text">Cover dowloads</span><span class="plus">+</span></label>
+                            <input class="form__image form__image_register form-control" id="registrationImage" type="file" name="registration[image]" onchange="readURL(this)">
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="course-reduct__information-donwload">
+                        <li><a href="#">It is a long established fact</a></li>
+                        <li><a href="#">It is a long established fact</a></li>
+                        <li><a href="#">It is a long established fact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="course-reduct__wrap">
+                    <div class="course-reduct__form_button add-article_butt">
+                      <div class="form__actions">
+                        <input class="form__submit grey" type="submit" value="Save">
+                      </div>
+                      <div class="form__actions">
+                        <input class="form__submit grey" type="reset" value="Cancel">
+                      </div>
+                      <div class="form__actions">
+                        <input class="form__submit grey delete" type="reset" value="Delete">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>

@@ -1,0 +1,105 @@
+extend includes/base/head
+block head
+    main.wrapper.wrapper_not-front
+        .wrapper__content.wrapper__content_backing
+            include includes/base/header.pug
+            .wrapper__middle
+                include includes/base/navigation.pug
+                .container-fluid
+                    .breadcrumbs
+                        a.breadcrumbs__link.breadcrumbs__link_home(href="home.html") Home
+                        span.breadcrumbs__sep /
+                        span.breadcrumbs__this Course
+                    .course.course-reduct
+                        form.course-reduct__form.row
+
+                            .col-xl-4.col-lg-6.col-md-8
+                                .course-reduct__wrap
+                                    .course-reduct__line
+                                        span Article cover
+                                        a(href="#" class="course-reduct__foto-dell")
+                                            img(src='../images/trash.png')
+
+                                    .course-reduct__foto
+                                        .course-reduct__foto_grab
+                                            span + Drag the cover here
+                                        img.course__img(
+                                        src="../images/course.jpg",
+                                        alt=""
+                                        )
+
+                            .col-xl-4.col-lg-6
+                                .course-reduct__wrap
+                                    .course-reduct__line
+                                        span Article description
+                                        a(href="#" class="course-reduct__foto-edit") Edit
+                                        a(href="#" class="course-reduct__foto-dell")
+                                            img(src='../images/trash.png')
+
+
+                                    .course-reduct__information
+
+
+                                        .form__item.form-group
+                                            label.form__label Name of the article
+                                            input.form__text.form__text_mod(type='text')
+
+                                        .form-group
+                                            label.form__label(for='tag_add') Add tags
+
+                                            input#tag_add.form-control(type='text', value='music', name="tag_add" data-role='tagsinput')
+
+
+
+
+
+                                        .form__item.form-group
+                                            label.form__label Write text
+                                            textarea.form__textarea.form__textarea_test.form-control
+
+
+
+
+                            .col-xl-4
+                                .course-reduct__wrap
+                                    .course-reduct__line
+                                        span Downloads
+                                        a(href="#" class="course-reduct__foto-edit") Edit
+                                        a(href="#" class="course-reduct__foto-dell")
+                                            img(src='../images/trash.png')
+                                    .course-reduct__information
+
+                                        .form__item.form-group.form__item_image
+                                            .form__images_plus
+                                                .form__images-wrap
+                                                    label(for='registrationImage')
+
+                                                        span.text
+                                                            | Cover dowloads
+                                                        span.plus +
+
+                                                    input#registrationImage.form__image.form__image_register.form-control(type='file', name='registration[image]', onchange='readURL(this)')
+
+                                        ul.course-reduct__information-donwload
+                                            li
+                                                a(href="#") It is a long established fact
+                                            li
+                                                a(href="#") It is a long established fact
+                                            li
+                                                a(href="#") It is a long established fact
+                                .course-reduct__wrap
+                                    .course-reduct__form_button.add-article_butt
+                                        .form__actions
+                                            input.form__submit.grey(type='submit', value='Save')
+                                        .form__actions
+                                            input.form__submit.grey(type='reset', value='Cancel')
+                                        .form__actions
+                                            input.form__submit.grey.delete(type='reset', value='Delete')
+
+
+
+
+
+
+
+        include includes/base/footer.pug
