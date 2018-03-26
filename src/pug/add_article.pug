@@ -45,9 +45,20 @@ block head
                                             input.form__text.form__text_mod(type='text')
 
                                         .form-group
-                                            label.form__label(for='tag_add') Add tags
+                                            label.form__label(for='ms') Add tags
 
-                                            input#tag_add.form-control(type='text', value='music', name="tag_add" data-role='tagsinput')
+                                            select.multiselect(multiple='multiple')
+                                                option(value='1') January
+
+                                                option(value='2') February
+
+                                                option(value='3', selected='selected') March
+
+
+
+
+
+
 
 
 
