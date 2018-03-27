@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../css/plyr.css">
     <link rel="stylesheet" href="../css/style.min.css">
     <link rel="stylesheet" type="text/css" href="../css/pell.css">
-    <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/multiple-select.css">
     <main class="wrapper wrapper_not-front">
       <div class="wrapper__content wrapper__content_backing">
         <header class="header">
@@ -68,8 +68,12 @@
                         <input class="form__text form__text_mod" type="text">
                       </div>
                       <div class="form-group">
-                        <label class="form__label" for="tag_add">Add tags</label>
-                        <input class="form-control" id="tag_add" type="text" value="music" name="tag_add" data-role="tagsinput">
+                        <label class="form__label" for="ms">Add tags</label>
+                        <select class="multiselect" multiple="multiple">
+                          <option value="1">January</option>
+                          <option value="2">February</option>
+                          <option value="3" selected="selected">March</option>
+                        </select>
                       </div>
                       <div class="form__item form-group">
                         <label class="form__label">Write text</label>
@@ -194,7 +198,7 @@
       <script src="../js/jquery.mousewheel.js"></script>
       <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="../js/bootstrap.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+      <script src="../js/multiple-select.js"></script>
       <script>
         function readURL(input) {
         	if (input.files && input.files[0]) {

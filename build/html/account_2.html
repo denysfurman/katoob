@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../css/plyr.css">
     <link rel="stylesheet" href="../css/style.min.css">
     <link rel="stylesheet" type="text/css" href="../css/pell.css">
-    <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/multiple-select.css">
     <main class="wrapper wrapper_not-front">
       <div class="wrapper__content">
         <header class="header">
@@ -48,7 +48,7 @@
             </div>
           </nav>
           <div class="container-fluid">
-            <div class="breadcrumbs"><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Articles</span></div>
+            <div class="breadcrumbs"><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><a class="breadcrumbs__link breadcrumbs__link_home" href="home.html">Home</a><span class="breadcrumbs__sep">/</span><span class="breadcrumbs__this">Articles</span></div>
             <div class="page__title">My Account</div>
             <div class="account">
               <div class="account">
@@ -61,7 +61,7 @@
                     <div class="form__item form-group form__item_image">
                       <div class="form__images_plus">
                         <div class="form__images-wrap">
-                          <label for="registrationImage"><span class="plus">+</span><span class="text">Upload a photo<i><img src="../images/trash.png"></i></span></label>
+                          <label for="registrationImage"><span class="plus">+</span><span class="text">Upload a photo<i><span class="icon-icon_37"></span></i></span></label>
                           <input class="form__image form__image_register form-control" id="registrationImage" type="file" name="registration[image]" onchange="readURL(this)">
                         </div>
                       </div>
@@ -241,7 +241,7 @@
       <script src="../js/jquery.mousewheel.js"></script>
       <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="../js/bootstrap.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+      <script src="../js/multiple-select.js"></script>
       <script>
         function readURL(input) {
         	if (input.files && input.files[0]) {

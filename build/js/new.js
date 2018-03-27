@@ -9,6 +9,12 @@ $(function() {
     });
 
 
+    // $('.open_full').click(function(){
+    //     $('.plyr__sr-only').click();
+    // });
+
+    $('.multiselect').multipleSelect();
+
 
 
 
@@ -50,15 +56,17 @@ $(function() {
             //console.log(html);
         }
     })
-});
 
+
+
+});
 
 
 (function($){
     $(window).on("load",function(){
 
         $.mCustomScrollbar.defaults.theme="inset"; //set "inset" as the default theme
-        $.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+        $.mCustomScrollbar.defaults.scrollButtons.enable=true;
 
 
 

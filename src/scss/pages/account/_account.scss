@@ -683,3 +683,53 @@
     width: 1100px;
   }
 }
+
+
+.account__teacher .account__teacher__wrap {
+  display: inline-block;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  position: static;
+}
+
+.account__teacher .account__teacher__wrap .base-table__rating .hidden_open_block {
+
+  z-index: 101;
+}
+@media (max-width: 1200px) {
+  .courses__image, .courses__wrap::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .courses__img {
+    max-width: none;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.icon-icon_37{
+
+  font-family: 'katoob' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-icon_37:before{
+  content: "\e925";
+}
+.form__images-wrap .icon-icon_37{
+  font-size: 22px;
+  position: relative;
+  top: 2px
+}

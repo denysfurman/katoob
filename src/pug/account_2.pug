@@ -8,6 +8,7 @@ block head
                 .container-fluid
                     .breadcrumbs
                         a.breadcrumbs__link.breadcrumbs__link_home(href="home.html") Home
+                        a.breadcrumbs__link.breadcrumbs__link_home(href="home.html") Home
                         span.breadcrumbs__sep /
                         span.breadcrumbs__this Articles
                     .page__title My Account
@@ -30,7 +31,7 @@ block head
                                                     span.text
                                                         | Upload a photo
                                                         i
-                                                            img(src='../images/trash.png')
+                                                            <span class="icon-icon_37"></span>
                                                 input#registrationImage.form__image.form__image_register.form-control(type='file', name='registration[image]', onchange='readURL(this)')
                                     .form__item.form-group
                                         label.form__label Nick name

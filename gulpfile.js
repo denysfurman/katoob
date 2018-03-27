@@ -38,12 +38,12 @@ var  path = {
 };
 // server connect
 gulp.task('connect', function() {
-  connect.server({
-    // host: 'katoob',
-    port: 8000,
-    root: 'build',
-    livereload: true
-  });
+    connect.server({
+       host: '127.0.0.1',
+        port: 8080,
+        root: 'build',
+        livereload: true
+    });
 });
 
 //-----------------------------------image task----------------------------//
@@ -91,5 +91,6 @@ gulp.task('image:watch', function() {
 });
 
 //-----------------------------------default task----------------------------//
-gulp.task('default', ['connect', 'html', 'scss', 'scss:watch', 'html:watch', 'image:watch']);
+ gulp.task('default', ['connect', 'html', 'scss', 'scss:watch', 'html:watch', 'image:watch']);
+
 

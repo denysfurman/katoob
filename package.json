@@ -26,5 +26,8 @@
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
     "vinyl-ftp": "^0.6.0"
+  },
+  "dependencies": {
+    "ejs": "^2.5.8"
   }
 }

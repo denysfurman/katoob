@@ -43,11 +43,11 @@ $(document).ready(function(){
 
 	// custom select
 	if($('select').length != 0){
-		$('select').selectize({
+		$('select').not(".multiselect").selectize({
 			create: true,
 			sortField: {field: 'text'}
 		});
-	}
+	 }
 
 	// teacher vertical slider
 	if($('.teacher-dropdown__content').length != 0){
@@ -138,6 +138,11 @@ $(document).ready(function(){
 	};
 	plyr.setup('.download__vid', options);
 	plyr.setup('.download__audio', options);
+    var optionsadd = {
+        controls: ['play-large', 'progress', 'current-time' , 'fullscreen']
+    };
+    plyr.setup('.download__vid.add', optionsadd);
+
 
 	// select all
 	if ($('.single-nav__select').length != 0 ){
